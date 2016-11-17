@@ -35,6 +35,18 @@
 
   <xsl:template name="mir.top-navigation">
   <div class="navbar navbar-default mir-prop-nav">
+    <div id="langswitch">
+      <xsl:choose>
+        <xsl:when test="$CurrentLang='it'"><a href="?lang=de">Deutsche Version</a></xsl:when>
+        <xsl:otherwise><a href="?lang=it">Versione italiana</a></xsl:otherwise>
+      </xsl:choose>
+    </div>
+    <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form form-inline" role="search">
+      <div class="form-group">
+        <input name="q" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
+      </div>
+      <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
     <nav class="mir-prop-nav-entries">
       <ul class="nav navbar-nav pull-right">
         <xsl:call-template name="mir.loginMenu" />
@@ -46,12 +58,6 @@
   <xsl:template name="mir.navigation">
     <div class="navbar navbar-default mir-side-nav">
       <nav class="mir-main-nav-entries">
-        <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form form-inline" role="search">
-          <div class="form-group">
-            <input name="q" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
-          </div>
-          <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-        </form>
         <ul class="nav navbar-nav">
           <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='main']" />
           <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" />
