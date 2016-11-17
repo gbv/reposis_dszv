@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Impressum">
+    <div>
+      <h2>Impressum und Copyright</h2>
+
+      <p>
+        siehe <a href="http://www.dszv.it/de/impressum/">Impressum des DSZV</a>
+      </p>
+    </div>
+  </section>
+  <meta>
+    <log date="2016-08-04" time="10:33" labelPath=" » Impressum" lastEditor="Kathleen Neumann" />
+  </meta>
+</MyCoReWebPage>

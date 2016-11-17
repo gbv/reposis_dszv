@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Willkommen auf den Seiten des Dokumentenserver des Deutschen Studienzentrums in Venedig">
+    <div class="jumbotwo">
+      <div class="row">
+        <div class="col-md-6" lang="de">
+          <h3>
+            Der Dokumentenserver
+          </h3>
+            <p>
+              ... des Deutschen Studienzentrums in Venedig (DSZV) umfasst wissenschaftliche und künstlerische Arbeiten zur
+              Geschichte und Kultur Venedigs und seinen ehemaligen Herrschaftsgebieten.
+            </p>
+            <p>
+              Er ermöglicht aktuellen und ehemaligen Stipendiaten/innen, Mitgliedern des Vereins <em>Deutsches Studienzentrum in
+              Venedig e.V.</em>, Wissenschaftlerinnen und Wissenschaftlern, die mit dem Deutschen Studienzentrum verbunden sind und
+              Venedig-Forschenden unterschiedlicher Herkunft das elektronische Publizieren ihrer wissenschaftlichen Arbeiten
+              im Rahmen der Open Access Initiative.
+            </p>
+            <p>
+              Eigene Publikationen, z.B. Zeitschriftenartikel, Konferenzbeiträge, Berichte, Reports, Lehrmaterialien, Forschungsdaten
+              oder künstlerische Werke der aktuellen und ehemaligen Stipendiatinnen und Stipendiaten des DSZV wie Kompositionen, Bilder,
+              Filme, Tonaufnahmen u.a., sei es als Erst- oder als Zweitveröffentlichungen, können auf dem Server abgelegt werden. Auch
+              für Prüfungsschriften, z.B. Dissertationen und Habilitationsschriften, wie auch Bachelor-, Master- und andere
+              Abschlussarbeiten bietet der Dokumentenserver den geeigneten Rahmen. Wir bieten:
+            </p>
+            <ul>
+              <li>Dauerhafte Archivierung</li>
+              <li>Verzeichnung im Bibliothekskatalog des DSZV</li>
+              <li>Such- und auffindbar in überregionalen Katalogen und Suchmaschinen</li>
+              <li>Abgabe an die Deutsche Nationalbibliothek bei Erstveröffentlichungen</li>
+            </ul>
+            <p>
+              Open-Access bietet freien Zugang zu wissenschaftlichen Informationen. Die Verwertungsrechte bleiben bei den Autoren. Sie
+              räumen der Bibliothek lediglich ein einfaches Nutzungsrecht ein, so dass eine kommerzielle Veröffentlichung nicht behindert wird.
+            </p>
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section xml:lang="it" title="Benvenuti sulle pagine del repository del Centro Tedesco di Studi Veneziani">
+      <div class="jumbotwo">
+        <div class="row">
+          <div class="col-md-6" lang="de">
+            <h3>
+              Il Repository
+            </h3>
+            <p>
+              ...del Centro Tedesco di Studi Veneziani (DSZV) contiene opere scientifiche e artistiche inerenti a Venezia o a
+              territori un tempo sotto amministrazione veneziana.
+            </p>
+            <p>
+              Esso offre la possibilità di pubblicare elettronicamente nella modalità Open access per:
+            </p>
+            <ul>
+              <li>borsisti ed ex-borsisti,</li>
+              <li>membri dell'associazione del Centro Tedesco di Studi Veneziani,</li>
+              <li>studiosi e studiose legati al DSZV</li>
+              <li>studiosi di cultura veneziana di varia provenienza.</li>
+            </ul>
+            <p>
+              Possono essere inserite nel repository pubblicazioni di vario tipo, quali articoli di riviste scientifiche,
+              conferenze,  reports, materiali didattici, dati di ricerca, come anche opere artistiche (composizioni, quadri,
+              fotografie, film, registrazioni audio e video ed altro). Possono essere caricati anche documenti già pubblicati.
+              Anche tesi di dottorato, laurea e master trovano collocazione nel nostro repository. In questo modo noi offriamo:
+            </p>
+            <ul>
+              <li>Archiviazione durevole</li>
+              <li>Inclusione nell’OPAC del DSZV</li>
+              <li>Modalità di ricerca dei documenti in diversi sistemi bibliotecari e motori di ricerca</li>
+              <li>Consegna di prime pubblicazioni alla Deutsche Nationalbibliothek</li>
+            </ul>
+            <p>
+              L’Open access offre libero accesso a tutte le informazioni scientifiche presenti. I diritti di utilizzazione
+              commerciale restano possesso degli autori, che concedono alla biblioteca un semplice diritto di uso per non
+              ostacolare la pubblicazione commerciale.
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <meta>
+        <log lastEditor="administrator" date="2016-11-17" time="10:35"/>
+    </meta>
+</MyCoReWebPage>
