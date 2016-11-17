@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="DDC">
+  <label xml:lang="it" text="Classificazione decimale Dewey" />
+  <label xml:lang="de" text="Dewey Dezimal-Klassifikation" />
+  <label xml:lang="x-auth" text="ddc" />
+  <categories>
+    <category ID="0">
+      <label xml:lang="it" text="000 Informatica, scienze dell'informazione, opere generali" />
+      <label xml:lang="x-mapper" text="SDNB:000" />
+      <label xml:lang="de" text="000 Informatik, Informationswissenschaft, allgemeine Werke" />
+      <category ID="00">
+        <label xml:lang="x-mapper" text="SDNB:000" />
+        <label xml:lang="it" text="000 Informatica, conoscenza, sistemi" />
+        <label xml:lang="de" text="000 Informatik, Wissen, Systeme" />
+      </category>
+      <category ID="01">
+        <label xml:lang="de" text="010 Bibliografien" />
+        <label xml:lang="x-mapper" text="SDNB:010" />
+        <label xml:lang="it" text="Bibliografia" />
+      </category>
+      <category ID="02">
+        <label xml:lang="de" text="020 Bibliotheks- und Informationswissenschaften" />
+        <label xml:lang="x-mapper" text="SDNB:020" />
+        <label xml:lang="it" text="020 Biblioteconomia e scienza dell'informazione" />
+      </category>
+      <category ID="03">
+        <label xml:lang="de" text="030 Enzyklopädien" />
+        <label xml:lang="x-mapper" text="SDNB:030" />
+        <label xml:lang="it" text="030 Enciclopedia" />
+      </category>
+      <category ID="05">
+        <label xml:lang="x-mapper" text="SDNB:050" />
+        <label xml:lang="it" text="050 Pubblicazioni generali in serie e loro indici" />
+        <label xml:lang="de" text="050 Zeitschriften, fortlaufende Sammelwerke" />
+      </category>
+      <category ID="06">
+        <label xml:lang="de" text="060 Verbände und Organisationen, Museumswissenschaft" />
+        <label xml:lang="it" text="060 Organizzazioni generali e museologia" />
+        <label xml:lang="x-mapper" text="SDNB:060" />
+      </category>
+      <category ID="07">
+        <label xml:lang="de" text="070 Nachrichtenmedien, Journalismus, Verlagswesen" />
+        <label xml:lang="it" text="070 Giornalismo, editoria, giornali" />
+        <label xml:lang="x-mapper" text="SDNB:070" />
+      </category>
+      <category ID="08">
+        <label xml:lang="de" text="080 Allgemeine Sammelwerke, Zitatensammlungen" />
+        <label xml:lang="x-mapper" text="SDNB:080" />
+        <label xml:lang="it" text="080 Raccolte generali" />
+      </category>
+      <category ID="09">
+        <label xml:lang="it" text="090 Manoscritto e libri rari" />
+        <label xml:lang="de" text="090 Handschriften, seltene Bücher" />
+        <label xml:lang="x-mapper" text="SDNB:090" />
+      </category>
+    </category>
+    <category ID="1">
+      <label xml:lang="it" text="100 Filosofia e Psicologia" />
+      <label xml:lang="de" text="100 Philosophie und Psychologie" />
+      <label xml:lang="x-mapper" text="SDNB:100" />
+      <category ID="10">
+        <label xml:lang="it" text="100 Filosofia e discipline connesse" />
+        <label xml:lang="de" text="100 Philosophie" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+      <category ID="11">
+        <label xml:lang="it" text="110 Metafisica (filosofia speculativa)" />
+        <label xml:lang="de" text="110 Metaphysik" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+      <category ID="12">
+        <label xml:lang="de" text="120 Epistemologie" />
+        <label xml:lang="it" text="120 Epistemologia, causalità, genere umano" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+      <category ID="13">
+        <label xml:lang="x-mapper" text="SDNB:130" />
+        <label xml:lang="de" text="130 Parapsychologie, Okkultismus" />
+        <label xml:lang="it" text="130 Fenomeni e tecniche paranormali" />
+      </category>
+      <category ID="14">
+        <label xml:lang="it" text="140 Specifiche posizioni filosofiche" />
+        <label xml:lang="de" text="140 Einzelne philosophische Schulen" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+      <category ID="15">
+        <label xml:lang="x-mapper" text="SDNB:150" />
+        <label xml:lang="de" text="150 Psychologie" />
+        <label xml:lang="it" text="150 Psicologia" />
+      </category>
+      <category ID="16">
+        <label xml:lang="de" text="160 Logik" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+        <label xml:lang="it" text="160 Logica" />
+      </category>
+      <category ID="17">
+        <label xml:lang="it" text="170 Etica (filosofia morale)" />
+        <label xml:lang="de" text="170 Ethik" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+      <category ID="18">
+        <label xml:lang="de" text="180 Antike, mittelalterliche und östliche Philosophie" />
+        <label xml:lang="it" text="180 Filosofia antica, medievale, orientale" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+      <category ID="19">
+        <label xml:lang="it" text="190 Filosofia occidentale moderna" />
+        <label xml:lang="de" text="190 Moderne westliche Philosophie" />
+        <label xml:lang="x-mapper" text="SDNB:100" />
+      </category>
+    </category>
+    <category ID="2">
+      <label xml:lang="it" text="200 Religione" />
+      <label xml:lang="de" text="200 Religion" />
+      <label xml:lang="x-mapper" text="SDNB:200" />
+      <category ID="20">
+        <label xml:lang="it" text="200 Religione" />
+        <label xml:lang="de" text="200 Religion" />
+        <label xml:lang="x-mapper" text="SDNB:200" />
+      </category>
+      <category ID="21">
+        <label xml:lang="de" text="210 Religionsphilosophie, Religionstheorie" />
+        <label xml:lang="it" text="210 Religione naturale" />
+        <label xml:lang="x-mapper" text="SDNB:200" />
+      </category>
+      <category ID="22">
+        <label xml:lang="x-mapper" text="SDNB:220" />
+        <label xml:lang="it" text="220 Bibbia" />
+        <label xml:lang="de" text="220 Bibel" />
+      </category>
+      <category ID="23">
+        <label xml:lang="it" text="230 Teologia cristiana, teologia dottrinale cristiana" />
+        <label xml:lang="x-mapper" text="SDNB:230" />
+        <label xml:lang="de" text="230 Christentum, Christliche Dogmatik" />
+      </category>
+      <category ID="24">
+        <label xml:lang="it" text="240 Teologia morale e devozionale cristiana" />
+        <label xml:lang="x-mapper" text="SDNB:230" />
+        <label xml:lang="de" text="240 Christliche Ethik, Praktische Theologie" />
+      </category>
+      <category ID="25">
+        <label xml:lang="x-mapper" text="SDNB:230" />
+        <label xml:lang="it" text="250 Chiesa cristiana e comunità. Ordini religiosi cristiani" />
+        <label xml:lang="de" text="250 Christliche Pastoraltheologie, Ordensgemeinschaften" />
+      </category>
+      <category ID="26">
+        <label xml:lang="x-mapper" text="SDNB:230" />
+        <label xml:lang="it" text="260 Teologia cristiana sociale ed ecclesiastica" />
+        <label xml:lang="de" text="260 Kirchenorganisation, Sozialethik, Gottesdienst" />
+      </category>
+      <category ID="27">
+        <label xml:lang="x-mapper" text="SDNB:230" />
+        <label xml:lang="it" text="270 Storia e geografia della chiesa cristiana organizzata" />
+        <label xml:lang="de" text="270 Geschichte des Christentums" />
+      </category>
+      <category ID="28">
+        <label xml:lang="it" text="280 Confessioni e sette della Chiesa cristiana" />
+        <label xml:lang="x-mapper" text="SDNB:230" />
+        <label xml:lang="de" text="280 Christliche Konfessionen und Denominationen" />
+      </category>
+      <category ID="29">
+        <label xml:lang="de" text="290 Andere Religionen" />
+        <label xml:lang="x-mapper" text="SDNB:290" />
+        <label xml:lang="it" text="290 Altre religioni e religione comparata" />
+      </category>
+    </category>
+    <category ID="3">
+      <label xml:lang="x-mapper" text="SDNB:300" />
+      <label xml:lang="it" text="300 Scienze sociali" />
+      <label xml:lang="de" text="300 Sozialwissenschaften" />
+      <category ID="30">
+        <label xml:lang="de" text="300 Sozialwissenschaften, Soziologie" />
+        <label xml:lang="x-mapper" text="SDNB:300" />
+        <label xml:lang="it" text="300 Opere di carattere generale e Sociologia" />
+      </category>
+      <category ID="31">
+        <label xml:lang="x-mapper" text="SDNB:310" />
+        <label xml:lang="it" text="310 Statistica" />
+        <label xml:lang="de" text="310 Statistik" />
+      </category>
+      <category ID="32">
+        <label xml:lang="x-mapper" text="SDNB:320" />
+        <label xml:lang="de" text="320 Politik" />
+        <label xml:lang="it" text="320 Scienze politiche" />
+      </category>
+      <category ID="33">
+        <label xml:lang="de" text="330 Wirtschaft" />
+        <label xml:lang="x-mapper" text="SDNB:330" />
+        <label xml:lang="it" text="330 Scienze economiche" />
+      </category>
+      <category ID="34">
+        <label xml:lang="it" text="340 Diritto" />
+        <label xml:lang="de" text="340 Recht" />
+        <label xml:lang="x-mapper" text="SDNB:340" />
+      </category>
+      <category ID="35">
+        <label xml:lang="it" text="350 Amministrazione pubblica e scienze militari" />
+        <label xml:lang="x-mapper" text="SDNB:350" />
+        <label xml:lang="de" text="350 Öffentliche Verwaltung, Militär" />
+      </category>
+      <category ID="36">
+        <label xml:lang="de" text="360 Gesellschaftliche Probleme, Sozialdienste" />
+        <label xml:lang="it" text="360 Assistenza sociale, sicurezza sociale" />
+        <label xml:lang="x-mapper" text="SDNB:360" />
+      </category>
+      <category ID="37">
+        <label xml:lang="x-mapper" text="SDNB:370" />
+        <label xml:lang="de" text="370 Erziehung, Schul- und Bildungswesen" />
+        <label xml:lang="it" text="370 Educazione" />
+      </category>
+      <category ID="38">
+        <label xml:lang="it" text="380 Commercio, comunicazioni, trasporti" />
+        <label xml:lang="de" text="380 Handel, Kommunikation, Verkehr" />
+        <label xml:lang="x-mapper" text="SDNB:380" />
+      </category>
+      <category ID="39">
+        <label xml:lang="it" text="390 Usi e costumi, etichetta, folclore" />
+        <label xml:lang="de" text="390 Sitten und Bräuche" />
+        <label xml:lang="x-mapper" text="SDNB:390" />
+      </category>
+    </category>
+    <category ID="4">
+      <label xml:lang="de" text="400 Sprache" />
+      <label xml:lang="x-mapper" text="SDNB:400" />
+      <label xml:lang="it" text="400 Linguaggio" />
+      <category ID="40">
+        <label xml:lang="de" text="400 Sprache" />
+        <label xml:lang="x-mapper" text="SDNB:400" />
+        <label xml:lang="it" text="400 Linguaggio" />
+      </category>
+      <category ID="41">
+        <label xml:lang="x-mapper" text="SDNB:400" />
+        <label xml:lang="it" text="410 Linguistica" />
+        <label xml:lang="de" text="410 Linguistik" />
+      </category>
+      <category ID="42">
+        <label xml:lang="de" text="420 Englisch, Altenglisch" />
+        <label xml:lang="it" text="420 Lingue inglese e anglosassone" />
+        <label xml:lang="x-mapper" text="SDNB:420" />
+      </category>
+      <category ID="43">
+        <label xml:lang="de" text="430 Deutsch, germanische Sprachen allgemein" />
+        <label xml:lang="x-mapper" text="SDNB:430" />
+        <label xml:lang="it" text="430 Lingue germaniche. Tedesco" />
+      </category>
+      <category ID="44">
+        <label xml:lang="de" text="440 Französisch, romanische Sprachen allgemein" />
+        <label xml:lang="x-mapper" text="SDNB:440" />
+        <label xml:lang="it" text="440 Lingue romanze. Francese" />
+      </category>
+      <category ID="45">
+        <label xml:lang="x-mapper" text="SDNB:450" />
+        <label xml:lang="de" text="450 Italienisch, Rumänisch, Rätoromanisch" />
+        <label xml:lang="it" text="450 Lingue italiana, rumena e affini" />
+      </category>
+      <category ID="46">
+        <label xml:lang="it" text="460 Lingue spagnola e portoghese" />
+        <label xml:lang="x-mapper" text="SDNB:460" />
+        <label xml:lang="de" text="460 Spanisch, Portugiesisch" />
+      </category>
+      <category ID="47">
+        <label xml:lang="it" text="470 Lingue italiche. Latino" />
+        <label xml:lang="x-mapper" text="SDNB:470" />
+        <label xml:lang="de" text="470 Latein, italische Sprachen" />
+      </category>
+      <category ID="48">
+        <label xml:lang="it" text="480 Lingue elleniche. Greco classico" />
+        <label xml:lang="x-mapper" text="SDNB:480" />
+        <label xml:lang="de" text="480 Griechisch" />
+      </category>
+      <category ID="49">
+        <label xml:lang="it" text="490 Altre lingue" />
+        <label xml:lang="de" text="490 Andere Sprachen" />
+        <label xml:lang="x-mapper" text="SDNB:490" />
+      </category>
+    </category>
+    <category ID="5">
+      <label xml:lang="x-mapper" text="SDNB:500" />
+      <label xml:lang="de" text="500 Naturwissenschaften und Mathematik" />
+      <label xml:lang="it" text="500 Scienze naturali e matematica" />
+      <category ID="50">
+        <label xml:lang="it" text="500 Scienze pure" />
+        <label xml:lang="x-mapper" text="SDNB:500" />
+        <label xml:lang="de" text="500 Naturwissenschaften" />
+      </category>
+      <category ID="51">
+        <label xml:lang="x-mapper" text="SDNB:510" />
+        <label xml:lang="de" text="510 Mathematik" />
+        <label xml:lang="it" text="510 Matematica" />
+      </category>
+      <category ID="52">
+        <label xml:lang="de" text="520 Astronomie" />
+        <label xml:lang="it" text="520 Astronomia e scienze connesse" />
+        <label xml:lang="x-mapper" text="SDNB:520" />
+      </category>
+      <category ID="53">
+        <label xml:lang="it" text="530 Fisica" />
+        <label xml:lang="x-mapper" text="SDNB:530" />
+        <label xml:lang="de" text="530 Physik" />
+      </category>
+      <category ID="54">
+        <label xml:lang="x-mapper" text="SDNB:540" />
+        <label xml:lang="de" text="540 Chemie" />
+        <label xml:lang="it" text="540 Chimica e scienze connesse" />
+      </category>
+      <category ID="55">
+        <label xml:lang="it" text="550 Scienze della terra e di altri mondi" />
+        <label xml:lang="x-mapper" text="SDNB:550" />
+        <label xml:lang="de" text="550 Geowissenschaften" />
+      </category>
+      <category ID="56">
+        <label xml:lang="x-mapper" text="SDNB:560" />
+        <label xml:lang="de" text="560 Paläontologie" />
+        <label xml:lang="it" text="560 Paleontologia. Paleozoologia" />
+      </category>
+      <category ID="57">
+        <label xml:lang="x-mapper" text="SDNB:570" />
+        <label xml:lang="it" text="570 Scienze della vita" />
+        <label xml:lang="de" text="570 Biowissenschaften; Biologie" />
+      </category>
+      <category ID="58">
+        <label xml:lang="it" text="580 Scienze botaniche" />
+        <label xml:lang="x-mapper" text="SDNB:580" />
+        <label xml:lang="de" text="580 Pflanzen (Botanik)" />
+      </category>
+      <category ID="59">
+        <label xml:lang="it" text="590 Scienze zoologiche" />
+        <label xml:lang="de" text="590 Tiere (Zoologie)" />
+        <label xml:lang="x-mapper" text="SDNB:590" />
+      </category>
+    </category>
+    <category ID="6">
+      <label xml:lang="x-mapper" text="SDNB:600" />
+      <label xml:lang="it" text="600 Tecnologia e scienze applicate" />
+      <label xml:lang="de" text="600 Technik, Medizin, angewandte Wissenschaften" />
+      <category ID="60">
+        <label xml:lang="x-mapper" text="SDNB:600" />
+        <label xml:lang="it" text="600 Tecnologia (Scienze applicate)" />
+        <label xml:lang="de" text="600 Technik" />
+      </category>
+      <category ID="61">
+        <label xml:lang="de" text="610 Medizin und Gesundheit" />
+        <label xml:lang="it" text="610 Medicina e salute" />
+        <label xml:lang="x-mapper" text="SDNB:610" />
+      </category>
+      <category ID="62">
+        <label xml:lang="it" text="620 Ingegneria e attività affini" />
+        <label xml:lang="de" text="620 Ingenieurwissenschaften" />
+        <label xml:lang="x-mapper" text="SDNB:620" />
+      </category>
+      <category ID="63">
+        <label xml:lang="x-mapper" text="SDNB:630" />
+        <label xml:lang="de" text="630 Landwirtschaft" />
+        <label xml:lang="it" text="630 Agricoltura e tecniche connesse" />
+      </category>
+      <category ID="64">
+        <label xml:lang="x-mapper" text="SDNB:640" />
+        <label xml:lang="it" text="640 Gestione della casa e della famiglia" />
+        <label xml:lang="de" text="640 Hauswirtschaft" />
+      </category>
+      <category ID="65">
+        <label xml:lang="it" text="650 Direzione aziendale e servizi ausiliari" />
+        <label xml:lang="de" text="650 Management" />
+        <label xml:lang="x-mapper" text="SDNB:650" />
+      </category>
+      <category ID="66">
+        <label xml:lang="de" text="660 Chemische Verfahrenstechnik" />
+        <label xml:lang="it" text="660 Tecnologie chimiche e affini" />
+        <label xml:lang="x-mapper" text="SDNB:660" />
+      </category>
+      <category ID="67">
+        <label xml:lang="de" text="670 Industrielle Fertigung" />
+        <label xml:lang="x-mapper" text="SDNB:670" />
+        <label xml:lang="it" text="670 Manifatture" />
+      </category>
+      <category ID="68">
+        <label xml:lang="it" text="680 Manifattura di prodotti per usi specifici" />
+        <label xml:lang="de" text="680 Fertigung von Produkten für bestimmte Verwendungszwecke" />
+        <label xml:lang="x-mapper" text="SDNB:670" />
+      </category>
+      <category ID="69">
+        <label xml:lang="x-mapper" text="SDNB:690" />
+        <label xml:lang="it" text="690 Edilizia" />
+        <label xml:lang="de" text="690 Hausbau, Bauhandwerk" />
+      </category>
+    </category>
+    <category ID="7">
+      <label xml:lang="de" text="700  Künste und Unterhaltung" />
+      <label xml:lang="x-mapper" text="SDNB:700" />
+      <label xml:lang="it" text="700 Le arti    Belle arti e arti decorative" />
+      <category ID="70">
+        <label xml:lang="it" text="700 Arti, belle arti e arti decorative" />
+        <label xml:lang="x-mapper" text="SDNB:700" />
+        <label xml:lang="de" text="700 Künste" />
+      </category>
+      <category ID="71">
+        <label xml:lang="de" text="710 Landschaftsgestaltung, Raumplanung" />
+        <label xml:lang="it" text="710 Urbanistica e arte del paesaggio" />
+        <label xml:lang="x-mapper" text="SDNB:710" />
+      </category>
+      <category ID="72">
+        <label xml:lang="it" text="720 Architettura" />
+        <label xml:lang="x-mapper" text="SDNB:720" />
+        <label xml:lang="de" text="720 Architektur" />
+      </category>
+      <category ID="73">
+        <label xml:lang="de" text="730 Plastik, Keramik, Metallkunst" />
+        <label xml:lang="x-mapper" text="SDNB:730" />
+        <label xml:lang="it" text="730 Arti plastiche, scultura" />
+      </category>
+      <category ID="74">
+        <label xml:lang="x-mapper" text="SDNB:740" />
+        <label xml:lang="de" text="740 Zeichnen, Kunsthandwerk" />
+        <label xml:lang="it" text="740 Disegno, arti decorative e arti minori" />
+      </category>
+      <category ID="75">
+        <label xml:lang="de" text="750 Malerei" />
+        <label xml:lang="it" text="750 Pittura e pitture" />
+        <label xml:lang="x-mapper" text="SDNB:750" />
+      </category>
+      <category ID="76">
+        <label xml:lang="de" text="760 Grafische Verfahren" />
+        <label xml:lang="it" text="760 Arti grafiche, tecniche di impressione e stampe" />
+        <label xml:lang="x-mapper" text="SDNB:760" />
+      </category>
+      <category ID="77">
+        <label xml:lang="it" text="770 Fotografia" />
+        <label xml:lang="de" text="770 Fotografie, Computerkunst" />
+        <label xml:lang="x-mapper" text="SDNB:770" />
+      </category>
+      <category ID="78">
+        <label xml:lang="x-mapper" text="SDNB:780" />
+        <label xml:lang="it" text="780 Musica" />
+        <label xml:lang="de" text="780 Musik" />
+      </category>
+      <category ID="79">
+        <label xml:lang="it" text="790 Arti ricreative e dello spettacolo" />
+        <label xml:lang="x-mapper" text="SDNB:790" />
+        <label xml:lang="de" text="790 Sport, Spiele, Unterhaltung" />
+      </category>
+    </category>
+    <category ID="8">
+      <label xml:lang="de" text="800 Literatur" />
+      <label xml:lang="it" text="800 Letteratura e Retorica" />
+      <label xml:lang="x-mapper" text="SDNB:800" />
+      <category ID="80">
+        <label xml:lang="it" text="600 Letteratura" />
+        <label xml:lang="de" text="800 Literatur, Rhetorik, Literaturwissenschaft" />
+        <label xml:lang="x-mapper" text="SDNB:800" />
+      </category>
+      <category ID="81">
+        <label xml:lang="de" text="810 Englische Literatur Amerikas" />
+        <label xml:lang="x-mapper" text="SDNB:810" />
+        <label xml:lang="it" text="810 Letteratura americana in lingua inglese" />
+      </category>
+      <category ID="82">
+        <label xml:lang="it" text="820 Letteratura in lingua inglese e anglosassone" />
+        <label xml:lang="x-mapper" text="SDNB:820" />
+        <label xml:lang="de" text="820 Englische, altenglische Literatur" />
+      </category>
+      <category ID="83">
+        <label xml:lang="x-mapper" text="SDNB:830" />
+        <label xml:lang="it" text="830 Letterature nelle lingue germaniche. Letteratura tedesca" />
+        <label xml:lang="de" text="830 Deutsche Literatur, Literatur in verwandten Sprachen" />
+      </category>
+      <category ID="84">
+        <label xml:lang="x-mapper" text="SDNB:840" />
+        <label xml:lang="de" text="840 Französische Literatur, Literatur in verwandten Sprachen" />
+        <label xml:lang="it" text="840 Letterature nelle lingue romanze. Letteratura francese" />
+      </category>
+      <category ID="85">
+        <label xml:lang="x-mapper" text="SDNB:850" />
+        <label xml:lang="de" text="850 Italienische, rumänische, rätoromanische Literatur" />
+        <label xml:lang="it" text="850 Letterature in lingua italiana, rumena e affini" />
+      </category>
+      <category ID="86">
+        <label xml:lang="it" text="860 Letterature in lingua spagnola e portoghese" />
+        <label xml:lang="x-mapper" text="SDNB:860" />
+        <label xml:lang="de" text="860 Spanische, portugiesische Literatur" />
+      </category>
+      <category ID="87">
+        <label xml:lang="x-mapper" text="SDNB:870" />
+        <label xml:lang="it" text="870 Letterature nelle lingue italiche. Letteratura latina" />
+        <label xml:lang="de" text="870 Lateinische, italische Literatur" />
+      </category>
+      <category ID="88">
+        <label xml:lang="x-mapper" text="SDNB:880" />
+        <label xml:lang="it" text="880 Letterature nelle lingue elleniche. Letteratura greca classica" />
+        <label xml:lang="de" text="880 Griechische Literatur" />
+      </category>
+      <category ID="89">
+        <label xml:lang="de" text="890 Literatur in anderen Sprachen" />
+        <label xml:lang="x-mapper" text="SDNB:890" />
+        <label xml:lang="it" text="890 Letterature in altre lingue" />
+      </category>
+    </category>
+    <category ID="9">
+      <label xml:lang="x-mapper" text="SDNB:900" />
+      <label xml:lang="it" text="900 Geografia, storia e discipline ausiliarie" />
+      <label xml:lang="de" text="900 Geschichte und Geografie" />
+      <category ID="90">
+        <label xml:lang="x-mapper" text="SDNB:900" />
+        <label xml:lang="de" text="900 Geschichte" />
+        <label xml:lang="it" text="900 Storia e discipline ausiliarie" />
+      </category>
+      <category ID="91">
+        <label xml:lang="x-mapper" text="SDNB:910" />
+        <label xml:lang="it" text="910 Geografia generale, viaggi" />
+        <label xml:lang="de" text="910 Geografie, Reisen" />
+      </category>
+      <category ID="92">
+        <label xml:lang="x-mapper" text="SDNB:920" />
+        <label xml:lang="de" text="920 Biografie, Genealogie" />
+        <label xml:lang="it" text="920 Biografie generali, genealogia, araldica" />
+      </category>
+      <category ID="93">
+        <label xml:lang="it" text="930 Storia generale del mondo antico" />
+        <label xml:lang="de" text="930 Geschichte der Alten Welt (bis ca. 499), Archäologie" />
+        <label xml:lang="x-mapper" text="SDNB:930" />
+      </category>
+      <category ID="94">
+        <label xml:lang="de" text="940 Geschichte Europas" />
+        <label xml:lang="it" text="940 Storia generale dell'Europa" />
+        <label xml:lang="x-mapper" text="SDNB:940" />
+        <category ID="940">
+          <label xml:lang="de" text="940 Geschichte Europas" />
+          <label xml:lang="it" text="940 Storia d'Europa    Europa occidentale" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="941">
+          <label xml:lang="it" text="941 Isole Britanniche" />
+          <label xml:lang="de" text="941 Geschichte Großbritanniens und Irlands" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="942">
+          <label xml:lang="it" text="942 Inghilterra e Galles" />
+          <label xml:lang="de" text="942 Geschichte Englands und Wales'" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="943">
+          <label xml:lang="de" text="943 Geschichte Mitteleuropas; Deutschlands" />
+          <label xml:lang="it" text="943 Europa Centrale; Germania" />
+          <label xml:lang="x-mapper" text="SDNB:943" />
+        </category>
+        <category ID="944">
+          <label xml:lang="it" text="944 Francia e principato di Monaco" />
+          <label xml:lang="de" text="944 Geschichte Frankreichs und Monacos" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="945">
+          <label xml:lang="de" text="945 Geschichte der italienischen Halbinsel und benachbarter Inseln" />
+          <label xml:lang="it" text="945 Penisola italiana e isole adiacenti; Italia" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+          <category ID="945.01">
+            <label xml:lang="it" text="945.01 Primo periodo, fino al 774" />
+            <label xml:lang="de" text="945.01 Anfänge bis 774" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.02">
+            <label xml:lang="it" text="945.02 Periodo della dominazione carolingia (franca), 774–962" />
+            <label xml:lang="de" text="945.02 Zeit der Karolinger, 774–962" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.03">
+            <label xml:lang="it" text="945.03 Periodo degl'imperatori germanici, 962–1122" />
+            <label xml:lang="de" text="945.03 Zeit der deutschen Kaiser, 962–1122" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.04">
+            <label xml:lang="it" text="945.04 Periodo comunale, 1122–1348" />
+            <label xml:lang="de" text="945.04 1122–1348" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.05">
+            <label xml:lang="it" text="945.05 Periodo dalla peste nera alla discesa di Carlo VIII, 1348–1494" />
+            <label xml:lang="de" text="945.05 Zeit der Pest bis zur Invasion von Karl VIII., 1348–1494" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.06">
+            <label xml:lang="de" text="945.06 1494–1527" />
+            <label xml:lang="it" text="945.06 Periodo delle lotte per l'egemonia tra Francia e Spagna, 1494–1527" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.07">
+            <label xml:lang="it" text="945.07 Periodo della dominazione spagnola e austriaca, 1527–1796" />
+            <label xml:lang="de" text="945.07 Spanische und österreichische Zeit, 1527–1796" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.08">
+            <label xml:lang="de" text="945.08 1796–1900" />
+            <label xml:lang="it" text="945.08 1796–1900" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.09">
+            <label xml:lang="de" text="945.09 1900–" />
+            <label xml:lang="it" text="945.09 1900–" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.1">
+            <label xml:lang="de" text="945.1 Nordwestliches Italien" />
+            <label xml:lang="it" text="945.1 Italia nordoccidentale    Regione del Piemonte" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.2">
+            <label xml:lang="de" text="945.2 Region Lombardei" />
+            <label xml:lang="it" text="945.2 Regione della Lombardia" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.3">
+            <label xml:lang="it" text="945.3 Italia nordorientale    Regione del Veneto" />
+            <label xml:lang="de" text="945.3 Nordöstliches Italien / Veneto / Venedig" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+            <category ID="945.301">
+              <label xml:lang="it" text="945.301 Primo periodo, fino al 774" />
+              <label xml:lang="de" text="945.301 Anfänge bis 774" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.302">
+              <label xml:lang="it" text="945.302 Periodo della dominazione franca e della marca veronese, 774–962" />
+              <label xml:lang="de" text="945.302 Zeit der Karolinger, 774–962" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.303">
+              <label xml:lang="de" text="945.303 Zeit der deutschen Kaiser, 962–1122" />
+              <label xml:lang="it" text="945.303 Periodo degl'imperatori germanici e delle lotte tra feudatari e cittadini, 962–1122" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.304">
+              <label xml:lang="it" text="945.304 Periodo dall'affermazione dei comuni fino alla sconfitta degli Scaligeri, 1122–1339" />
+              <label xml:lang="de" text="945.304 1122–1339" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.305">
+              <label xml:lang="it" text="945.305 Periodo dall'affermazione di Venezia alla discesa di Carlo VIII, 1339–1494" />
+              <label xml:lang="de" text="945.305 Zeit nach der Niederlage des Hauses Scaliger bis zur Invasion von Karl VIII., 1339–1494" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.306">
+              <label xml:lang="de" text="945.306 Zeit der Invasion von Karl VIII. bis zum Vertrag von Noyon, 1494–1516" />
+              <label xml:lang="it" text="945.306 Periodo dalla pace di Lodi alla pace di Noyon, 1494–1516" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.307">
+              <label xml:lang="it" text="945.307 1516–1797" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+              <label xml:lang="de" text="945.307 Zeit nach dem Vertrag von Noyon bis zum Vertrag von Campo Formio, 1516–1797" />
+            </category>
+            <category ID="945.308">
+              <label xml:lang="de" text="945.308 1797–1900" />
+              <label xml:lang="it" text="945.308 1797–1900" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.309">
+              <label xml:lang="de" text="945.309 1900–" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+              <label xml:lang="it" text="945.309 1900–" />
+            </category>
+            <category ID="945.38">
+              <label xml:lang="it" text="945.38 Regione del Trentino-Alto Adige" />
+              <label xml:lang="de" text="945.38 Region Trentino-Südtirol" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+            <category ID="945.39">
+              <label xml:lang="de" text="945.39 Region Friaul-Julisch-Venetien" />
+              <label xml:lang="it" text="945.39 Regione del Friuli-Venezia Giulia" />
+              <label xml:lang="x-mapper" text="SDNB:940" />
+            </category>
+          </category>
+          <category ID="945.4">
+            <label xml:lang="de" text="945.4 Region Emilia-Romagna und San Marino" />
+            <label xml:lang="it" text="945.4 Regione dell'Emilia-Romagna e San Marino" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.5">
+            <label xml:lang="de" text="945.5 Region Toskana" />
+            <label xml:lang="it" text="945.5 Regione della Toscana" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.6">
+            <label xml:lang="de" text="945.6 Mittelitalien und Vatikanstadt" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+            <label xml:lang="it" text="945.6 Italia centrale e Città del Vaticano" />
+          </category>
+          <category ID="945.7">
+            <label xml:lang="it" text="945.7 Italia meridionale" />
+            <label xml:lang="de" text="945.7 Süditalien" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+          <category ID="945.8">
+            <label xml:lang="it" text="945.8 Regione della Sicilia e isole adiacenti" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+            <label xml:lang="de" text="945.8 Sizilien und benachbarte Inseln" />
+          </category>
+          <category ID="945.9">
+            <label xml:lang="de" text="945.9 Sardinien" />
+            <label xml:lang="it" text="945.9 Regione della Sardegna" />
+            <label xml:lang="x-mapper" text="SDNB:940" />
+          </category>
+        </category>
+        <category ID="946">
+          <label xml:lang="it" text="946 Penisola iberica e isole adiacenti; Spagna" />
+          <label xml:lang="de" text="946 Geschichte der iberischen Halbinsel und benachbarter Inseln" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="947">
+          <label xml:lang="de" text="947 Geschichte Osteuropas; Russlands" />
+          <label xml:lang="it" text="947 Europa orientale; Russia" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="948">
+          <label xml:lang="de" text="948 Geschichte Skandinaviens" />
+          <label xml:lang="it" text="948 Scandinavia" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+        <category ID="949">
+          <label xml:lang="it" text="949 Altre parti d'Europa" />
+          <label xml:lang="de" text="949 Geschichte anderer Teile Europas" />
+          <label xml:lang="x-mapper" text="SDNB:940" />
+        </category>
+      </category>
+      <category ID="95">
+        <label xml:lang="it" text="950 Storia generale dell'Asia" />
+        <label xml:lang="de" text="950 Geschichte Asiens" />
+        <label xml:lang="x-mapper" text="SDNB:950" />
+      </category>
+      <category ID="96">
+        <label xml:lang="x-mapper" text="SDNB:960" />
+        <label xml:lang="de" text="960 Geschichte Afrikas" />
+        <label xml:lang="it" text="960 Storia generale dell'Africa" />
+      </category>
+      <category ID="97">
+        <label xml:lang="x-mapper" text="SDNB:970" />
+        <label xml:lang="it" text="970 Storia dell'America settentrionale" />
+        <label xml:lang="de" text="970 Geschichte Nordamerikas" />
+      </category>
+      <category ID="98">
+        <label xml:lang="x-mapper" text="SDNB:980" />
+        <label xml:lang="de" text="980 Geschichte Südamerikas" />
+        <label xml:lang="it" text="980 Storia generale dell'America meridionale" />
+      </category>
+      <category ID="99">
+        <label xml:lang="de" text="990 Geschichte anderer Gebiete" />
+        <label xml:lang="it" text="990 Storia generale di altre parti del mondo e di mondi extraterrestri" />
+        <label xml:lang="x-mapper" text="SDNB:990" />
+      </category>
+    </category>
+  </categories>
+</mycoreclass>
