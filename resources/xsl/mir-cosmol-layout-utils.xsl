@@ -11,14 +11,23 @@
     <div id="head" class="container">
       <div class="row">
         <div id="header_back">
-          <h2 id="project_title">
-            <a href="http://dszv.it/de/"><img src="{$WebApplicationBaseURL}images/logos/dszv.gif" id="header_ratio" /></a>
-          </h2>
-          <h3 id="project_slogan">
-            <a href="{$WebApplicationBaseURL}">
-              Dokumentenserver
-            </a>
-          </h3>
+          <!-- site logo -->
+          <div id="site_logo" role="projectlogo">
+            <h1><a href="http://dszv.it/{$CurrentLang}/"><img alt="DSZV-Logo" src="{$WebApplicationBaseURL}images/logos/dszv.gif" /></a></h1>
+          </div>
+          <div id="project_info">
+            <h2 id="project_title">
+            <xsl:choose>
+              <xsl:when test="$CurrentLang='it'"><img alt="istituzione" src="{$WebApplicationBaseURL}images/logos/titolo.gif" /></xsl:when>
+              <xsl:otherwise><img alt="Institution" src="{$WebApplicationBaseURL}images/logos/title.gif" /></xsl:otherwise>
+            </xsl:choose>
+            </h2>
+            <h3 id="project_slogan">
+              <a href="{$WebApplicationBaseURL}">
+                <xsl:value-of select="i18n:translate('dszv.slogan')" />
+              </a>
+            </h3>
+          </div>
         </div>
         <noscript>
           <div class="mir-no-script alert alert-warning text-center" style="border-radius: 0;">

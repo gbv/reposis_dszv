@@ -36,33 +36,6 @@ header .container .row #header_back {
   background-image: unset;
 }
 
-#project_title {
-    margin-bottom: 4px;
-}
-#project_slogan {
-    margin-top: 0;
-}
-#project_title,
-#project_slogan {
-    font-family: Arial,Helvetica,sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 18px;
-    font-weight: bold;
-    padding-left: 65px;
-}
-#project_title a,
-#project_slogan a{
-    color: #808080;
-}
-
-#project_title a:hover,
-#project_slogan a:hover {
-    color: #808080;
-    text-decoration: none;
-}
-
 #side_nav_column .mir-side-nav nav .navbar-nav {
     margin-left: 45px;
 }
