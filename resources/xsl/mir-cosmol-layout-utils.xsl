@@ -12,10 +12,10 @@
       <div class="row">
         <div id="header_back">
           <!-- site logo -->
-          <div id="site_logo" role="projectlogo">
+          <div id="site_logo" role="projectlogo" class="col-sm-3">
             <h1><a href="http://dszv.it/{$CurrentLang}/"><img alt="DSZV-Logo" src="{$WebApplicationBaseURL}images/logos/dszv.gif" /></a></h1>
           </div>
-          <div id="project_info">
+          <div id="project_info" class="col-sm-9">
             <h2 id="project_title">
             <xsl:choose>
               <xsl:when test="$CurrentLang='it'"><img alt="istituzione" src="{$WebApplicationBaseURL}images/logos/titolo.gif" /></xsl:when>
@@ -43,25 +43,27 @@
   </xsl:template>
 
   <xsl:template name="mir.top-navigation">
-  <div class="navbar navbar-default mir-prop-nav">
-    <div id="langswitch">
-      <xsl:choose>
-        <xsl:when test="$CurrentLang='it'"><a href="?lang=de">Deutsche Version</a></xsl:when>
-        <xsl:otherwise><a href="?lang=it">Versione italiana</a></xsl:otherwise>
-      </xsl:choose>
+    <div class="navbar navbar-default mir-prop-nav pull-right">
+      <nav class="mir-prop-nav-entries">
+        <ul class="nav navbar-nav">
+          <xsl:call-template name="mir.loginMenu" />
+        </ul>
+      </nav>
     </div>
-    <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form form-inline" role="search">
-      <div class="form-group">
-        <input name="q" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
+    <div id="searchLangSwitch" class="pull-right">
+      <div id="langswitch">
+        <xsl:choose>
+          <xsl:when test="$CurrentLang='it'"><a href="?lang=de">Deutsche Version</a></xsl:when>
+          <xsl:otherwise><a href="?lang=it">Versione italiana</a></xsl:otherwise>
+        </xsl:choose>
       </div>
-      <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-    </form>
-    <nav class="mir-prop-nav-entries">
-      <ul class="nav navbar-nav pull-right">
-        <xsl:call-template name="mir.loginMenu" />
-      </ul>
-    </nav>
-  </div>
+      <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form form-inline" role="search">
+        <div class="form-group">
+          <input name="q" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
+        </div>
+        <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+    </div>
   </xsl:template>
 
   <xsl:template name="mir.navigation">
