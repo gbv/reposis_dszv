@@ -16,13 +16,13 @@
         </nav>
       </div>
       <div id="project_logo_box" class="row">
-        <div class="col-md-4">
+        <div class="col-md-2">
           <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="">
             <img src="{$WebApplicationBaseURL}images/logos/dszv.gif" alt="DSZV-Logo" style="height:4em; width:4em;" />
           </a>
         </div>
-        <div class="col-md-8">
-          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"><span> Deutschen Studienzentrums in Venedig</span><br />Dokumentenserver</a>
+        <div class="col-md-10">
+          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"><span>Deutsches Studienzentrum in Venedig</span><br />Dokumentenserver</a>
         </div>
       </div>
     </div>
