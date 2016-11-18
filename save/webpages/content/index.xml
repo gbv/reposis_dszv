@@ -39,7 +39,7 @@
           <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
           <h3>Die zuletzt aktualisierten Datensätze</h3>
           <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
-        <div id="last5"></div>
+          <div id="last5"></div>
         </div>
       </div>
     </div>
@@ -83,12 +83,12 @@
             ostacolare la pubblicazione commerciale.
           </p>
           </div>
-        </div>
-        <div class="col-md-6" lang="de">
-          <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-          <h3>Die zuletzt aktualisierten Datensätze</h3>
-          <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
-          <div id="last5"></div>
+          <div class="col-md-6" lang="de">
+            <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
+            <h3>Die zuletzt aktualisierten Datensätze</h3>
+            <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
+            <div id="last5"></div>
+          </div>
         </div>
       </div>
     </section>
