@@ -35,8 +35,31 @@
               räumen der Bibliothek lediglich ein einfaches Nutzungsrecht ein, so dass eine kommerzielle Veröffentlichung nicht behindert wird.
             </p>
           </div>
+          <div class="col-md-6" lang="de">
+            <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
+            <h3>Die 5 zuletzt aktualisierte Datensätze</h3>
+            <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
+            <div id="last5"></div>
+          </div>
         </div>
-    </div>
+      </div>
+      <script>
+         //funktioniert wegen Cross-Origin-Requests nur auf dem eigenen Server
+        $.getJSON('../../api/v1/search?q=objectType:mods&rows=5&sort=modified desc&wt=json',
+            function (data) {
+              $('#doc_count').text(data.response.numFound);
+
+              $(data.response.docs).each(function(i, doc){
+                $('#last5').append($('<div class="lastmod"></div>')
+                    .append($('<table></table>').append($('<tr></tr>')
+                      .append($('<td></td>').append(
+                        '<h4><a href="../../resolve/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a></h4>',
+                          '<p class="title">'+doc['mods.title.main']:''+'</p>',
+                          '<p class="modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
+                      )))));
+            });
+        });
+      </script>
     </section>
 
 
@@ -85,31 +108,3 @@
         <log lastEditor="administrator" date="2016-11-17" time="10:35"/>
     </meta>
 </MyCoReWebPage>
-
-
-
-<script>
-
-   //funktioniert wegen Cross-Origin-Requests nur auf dem eigenen Server
-  $.getJSON('../../api/v1/search?q=objectType:mods&rows=5&sort=modified desc&wt=json',
-      function (data) {
-        $('#doc_count').text(data.response.numFound);
-
-        $(data.response.docs).each(function(i, doc){
-          $('#last5').append($('<div class="lastmod"></div>')
-              .append($('<table></table>').append($('<tr></tr>')
-                .append($('<td></td>').append(
-                  '<h4><a href="../../resolve/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a></h4>',
-                    '<p class="title">'+doc['mods.title.main']:''+'</p>',
-                    '<p class="modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
-                )))));
-      });
-  });
-</script>
-</head>
-<body>
-  <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-  <h3>Die 5 zuletzt aktualisierte Datensätze</h3>
-  <p>Im CPR befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
-  <div id="last5"></div>
-</body>
