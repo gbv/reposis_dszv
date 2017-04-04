@@ -3,6 +3,7 @@
 <MyCoReWebPage>
   <section title="MODS-Dokument erstellen" xml:lang="de"/>
   <section title="Create MODS document" xml:lang="en"/>
+  <section title="Crea documento MODS" xml:lang="it"/>
   <section xml:lang="all">
 
   <xed:form xmlns:xed="http://www.mycore.de/xeditor" xmlns:cmd="http://www.cdlib.org/inside/diglib/copyrightMD" method="post" role="form" class="form-horizontal">

@@ -53,8 +53,8 @@
     <div id="searchLangSwitch" class="pull-right">
       <div id="langswitch">
         <xsl:choose>
-          <xsl:when test="$CurrentLang='it'"><a href="?lang=de">Deutsche Version</a></xsl:when>
-          <xsl:otherwise><a href="?lang=it">Versione italiana</a></xsl:otherwise>
+          <xsl:when test="$CurrentLang='it'"><a href="?lang=de"><xsl:value-of select="i18n:translate('dszv.language')"/></a></xsl:when>
+          <xsl:otherwise><a href="?lang=it"><xsl:value-of select="i18n:translate('dszv.language')"/></a></xsl:otherwise>
         </xsl:choose>
       </div>
       <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form form-inline" role="search">
