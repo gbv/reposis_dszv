@@ -3,7 +3,7 @@
   <section xml:lang="de" title="Willkommen auf den Seiten des Dokumentenserver des Deutschen Studienzentrums in Venedig">
     <div class="jumbotwo">
       <div class="row">
-        <div class="col-md-6" lang="de">
+        <div class="col-md-8" lang="de">
           <h3>
             Der Dokumentenserver
           </h3>
@@ -35,9 +35,9 @@
             räumen der Bibliothek lediglich ein einfaches Nutzungsrecht ein, so dass eine kommerzielle Veröffentlichung nicht behindert wird.
           </p>
         </div>
-        <div class="col-md-6" lang="de">
+        <div class="col-md-4 dszv_borderbox" lang="de">
           <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-          <h3>Die zuletzt aktualisierten Datensätze</h3>
+          <h3 class="text-uppercase">Aktuelle Dokumente</h3>
           <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
           <div id="last5"></div>
         </div>
@@ -48,7 +48,7 @@
   <section xml:lang="it" title="Benvenuti sulle pagine del repository del Centro Tedesco di Studi Veneziani">
     <div class="jumbotwo">
       <div class="row">
-        <div class="col-md-6" lang="de">
+        <div class="col-md-8" lang="de">
           <h3>
             Il Repository
           </h3>
@@ -83,11 +83,11 @@
             ostacolare la pubblicazione commerciale.
           </p>
           </div>
-          <div class="col-md-6" lang="it">
+          <div class="col-md-4 borderbox" lang="it">
             <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-            <h3>I record aggiornati più di recente</h3>
+            <h3 class="text-uppercase">Documenti attuali</h3>
             <p>Nel server di documenti attualmente sono <span id="doc_count">[Anz]</span> record.</p>
-            <div id="last5"></div>
+            <div id="last4"></div>
           </div>
         </div>
       </div>
@@ -96,17 +96,18 @@
     <section xml:lang="all">
       <script>
          //funktioniert wegen Cross-Origin-Requests nur auf dem eigenen Server
-        $.getJSON('../api/v1/search?q=objectType:mods&amp;rows=5&amp;sort=modified desc&amp;wt=json',
+        $.getJSON('../api/v1/search?q=objectType:mods&amp;rows=4&amp;sort=modified desc&amp;wt=json',
             function (data) {
               $('#doc_count').text(data.response.numFound);
 
               $(data.response.docs).each(function(i, doc){
-                $('#last5').append($('<div class="lastmod"></div>')
-                    .append($('<table></table>').append($('<tr></tr>')
+                $('#last4').append($('<div class="lastmod"></div>')
+                    .append($('<table class="table"></table>').append($('<tr></tr>')
                       .append($('<td></td>')
-                        .append('<a href="../resolve/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a>',
-                          '<p class="title">'+doc['mods.title.main']+'</p>',
-                          '<p class="modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
+                        .append('<p class="dszv_date">'+new Date(doc['mods.dateIssued']).toLocaleString()+'</p>',
+                          '<a class="dszv_title" href="../receive/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a>',
+                          '<p class="dszv_author">'+doc['mods.author']+'</p>',
+                          '<p class="dszv_modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
                       )))));
             });
         });
@@ -114,7 +115,7 @@
     </section>
 
     <meta>
-        <log lastEditor="administrator" date="2016-11-17" time="10:35"/>
+        <log lastEditor="administrator" date="2017-06-20" time="10:35"/>
     </meta>
 </MyCoReWebPage>
 

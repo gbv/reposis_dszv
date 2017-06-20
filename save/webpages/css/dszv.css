@@ -36,6 +36,23 @@ header .container .row #header_back {
   background-image: unset;
 }
 
+.dszv_borderbox {
+  background: none;
+  border: 3px dotted #e7c675;
+  border-radius: 0px;
+}
+
+.dszv_date {
+  color: #999;
+  font-size: 11px;
+  margin: 0px 0px 0px 0px;
+}
+
+.dszv_modified {
+  font-size: 11px;
+  text-align: right;
+}
+
 #side_nav_column .mir-side-nav nav .navbar-nav {
     margin-left: 45px;
 }
