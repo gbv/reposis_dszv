@@ -3,10 +3,14 @@
   <section xml:lang="de" title="Willkommen auf den Seiten des Dokumentenserver des Deutschen Studienzentrums in Venedig">
     <div class="jumbotwo">
       <div class="row">
-        <div class="col-md-8" lang="de">
-          <h3>
+        <div class="col-md-12" lang="de">
+          <h1>
             Der Dokumentenserver
-          </h3>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" lang="de">
           <p>
             ... des Deutschen Studienzentrums in Venedig (DSZV) umfasst wissenschaftliche und künstlerische Arbeiten zur
             Geschichte und Kultur Venedigs und seinen ehemaligen Herrschaftsgebieten.
@@ -39,7 +43,7 @@
           <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
           <h3 class="text-uppercase">Aktuelle Dokumente</h3>
           <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
-          <div id="last5"></div>
+          <div id="last4"></div>
         </div>
       </div>
     </div>
@@ -48,10 +52,14 @@
   <section xml:lang="it" title="Benvenuti sulle pagine del repository del Centro Tedesco di Studi Veneziani">
     <div class="jumbotwo">
       <div class="row">
-        <div class="col-md-8" lang="de">
-          <h3>
+        <div class="col-md-12" lang="de">
+          <h1>
             Il Repository
-          </h3>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" lang="de">
           <p>
             ...del Centro Tedesco di Studi Veneziani (DSZV) contiene opere scientifiche e artistiche inerenti a Venezia o a
             territori un tempo sotto amministrazione veneziana.
@@ -101,12 +109,13 @@
               $('#doc_count').text(data.response.numFound);
 
               $(data.response.docs).each(function(i, doc){
+                let author = doc['mods.author'] ? doc['mods.author'] : '&#160;';
                 $('#last4').append($('<div class="lastmod"></div>')
                     .append($('<table class="table"></table>').append($('<tr></tr>')
                       .append($('<td></td>')
-                        .append('<p class="dszv_date">'+new Date(doc['mods.dateIssued']).toLocaleString()+'</p>',
+                        .append('<p class="dszv_date">'+doc['mods.dateIssued']+'</p>',
                           '<a class="dszv_title" href="../receive/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a>',
-                          '<p class="dszv_author">'+doc['mods.author']+'</p>',
+                          '<p class="dszv_author">'+author+'</p>',
                           '<p class="dszv_modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
                       )))));
             });

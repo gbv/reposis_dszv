@@ -28,6 +28,13 @@
               </a>
             </h3>
           </div>
+          <div class="navbar navbar-default mir-prop-nav pull-right">
+            <nav class="mir-prop-nav-entries">
+              <ul class="nav navbar-nav">
+                <xsl:call-template name="mir.loginMenu" />
+              </ul>
+            </nav>
+          </div>
         </div>
         <noscript>
           <div class="mir-no-script alert alert-warning text-center" style="border-radius: 0;">
@@ -43,13 +50,6 @@
   </xsl:template>
 
   <xsl:template name="mir.top-navigation">
-    <div class="navbar navbar-default mir-prop-nav pull-right">
-      <nav class="mir-prop-nav-entries">
-        <ul class="nav navbar-nav">
-          <xsl:call-template name="mir.loginMenu" />
-        </ul>
-      </nav>
-    </div>
     <div id="searchLangSwitch" class="pull-right">
       <div id="langswitch">
         <xsl:choose>

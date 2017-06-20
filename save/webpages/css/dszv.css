@@ -18,22 +18,16 @@ header .container .row #header_back {
     border-top-right-radius: 0px;
 }
 
-header #head  {
-    border: 1px solid #ccc;
-    border-width: 0 1px 0 1px;
-}
-div#page {
-    border: 1px solid #ccc;
-    border-width: 0 1px 0 1px;
-    padding-right: 30px;
-}
-
 header .container .row #header_back #header_ratio {
   width: unset;
 }
 
 header .container .row #header_back {
   background-image: unset;
+}
+
+#site_logo img {
+  margin-left:40px;
 }
 
 .dszv_borderbox {
@@ -52,6 +46,34 @@ header .container .row #header_back {
   font-size: 11px;
   text-align: right;
 }
+
+#searchLangSwitch {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#searchLangSwitch .navbar-form {
+  float: right;
+}
+
+#langswitch {
+  float: left;
+}
+
+#main_content_column .button_box {
+    position: relative;
+}
+.button_box #hide_side_button.navbar-toggle {
+    margin-top: 40px;
+}
+
+.mir-prop-nav {
+  top: 0;
+  position: absolute;
+  right: 20px;
+}
+
 
 #side_nav_column .mir-side-nav nav .navbar-nav {
     margin-left: 45px;
@@ -125,14 +147,9 @@ header .container .row #header_back {
 
 
 footer .container #menu {
-    background-color: #e6e6e6;
-    background-image: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #ccc;
-    border-width: 0 1px 1px 1px;
+  background-color: white;
+  background-image: none;
+  border-top: 1px solid #ccc;
 }
 
 footer .container #menu #sub_menu li a {
