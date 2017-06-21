@@ -77,7 +77,7 @@
           <xsl:call-template name="mir.basketMenu" />
 
           <li class="dropdown">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvLibrary"><xsl:value-of select="i18n:translate('dszv.library')" /<span class="caret"></span></a>
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvLibrary"><xsl:value-of select="i18n:translate('dszv.library')" /><span class="caret"></span></a>
             <ul aria-labelledby="dszvLibrary" role="menu" class="dropdown-menu">
               <li>
                 <a class="menu" href="http://vzlbs2.gbv.de/DB=46/"><xsl:value-of select="i18n:translate('dszv.onlinecatalog')" /></a>
@@ -86,7 +86,7 @@
           </li>
 
           <li class="dropdown">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvInstitute"><xsl:value-of select="i18n:translate('dszv.institute')" /<span class="caret"></span></a>
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvInstitute"><xsl:value-of select="i18n:translate('dszv.institute')" /><span class="caret"></span></a>
             <ul aria-labelledby="dszvInstitute" role="menu" class="dropdown-menu">
               <li>
                 <xsl:choose>
