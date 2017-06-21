@@ -189,10 +189,6 @@ footer .container #menu {
   border-top: 1px solid #ccc;
 }
 
-.container {
-  width: 1280px;
-}
-
 #side_nav_column .mir-side-nav nav .navbar-nav > li > a,
 #side_nav_column .mir-side-nav nav .navbar-nav > li.active > a {
   padding: 18px 0 0 20px;
