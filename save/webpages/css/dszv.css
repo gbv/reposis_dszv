@@ -26,6 +26,10 @@ header .container .row #header_back {
   background-image: unset;
 }
 
+h1 {
+  font-size: 28px;
+}
+
 #site_logo img {
   margin-left:40px;
 }
@@ -81,7 +85,6 @@ header .container .row #header_back {
 
 #side_nav_column .mir-side-nav nav .navbar-nav > li > a {
     color: #008c4f;
-        color: #888;
     background-color: transparent;
     font-size: 18px;
     border: 0px solid #008c4f;

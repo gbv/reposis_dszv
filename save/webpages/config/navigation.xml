@@ -13,20 +13,6 @@
       <label xml:lang="en">Start</label>
       <label xml:lang="it">Start</label>
     </item>
-    <item href="/content/brand/impressum.xml" type="intern">
-      <label xml:lang="de">Impressum</label>
-      <label xml:lang="en">Impressum</label>
-      <label xml:lang="it">Crediti</label>
-    </item>
-    <item href="/content/brand/contact.xml" type="intern">
-      <label xml:lang="de">Kontakt</label>
-      <label xml:lang="en">Contact</label>
-      <label xml:lang="it">Contatti</label>
-    </item>
-  </menu>
-  <menu id="below" dir="/content/below">
-    <label xml:lang="de">Footer-Menü</label>
-    <label xml:lang="en">Footer menu</label>
   </menu>
   <menu id="search">
     <!-- search menu  -->

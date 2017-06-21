@@ -75,7 +75,33 @@
           <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
           <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
           <xsl:call-template name="mir.basketMenu" />
-          <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='misc']" />
+
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvLibrary"><xsl:value-of select="i18n:translate('dszv.library')" /<span class="caret"></span></a>
+            <ul aria-labelledby="dszvLibrary" role="menu" class="dropdown-menu">
+              <li>
+                <a class="menu" href="http://vzlbs2.gbv.de/DB=46/"><xsl:value-of select="i18n:translate('dszv.onlinecatalog')" /></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvInstitute"><xsl:value-of select="i18n:translate('dszv.institute')" /<span class="caret"></span></a>
+            <ul aria-labelledby="dszvInstitute" role="menu" class="dropdown-menu">
+              <li>
+                <xsl:choose>
+                  <xsl:when test="$CurrentLang='it'"><a class="menu" href="http://www.dszv.it/it/contatti/"><xsl:value-of select="i18n:translate('dszv.contact')" /></a></xsl:when>
+                  <xsl:otherwise><a class="menu" href="http://www.dszv.it/de/kontakt/"><xsl:value-of select="i18n:translate('dszv.contact')" /></a></xsl:otherwise>
+                </xsl:choose>
+              </li>
+              <li>
+                <xsl:choose>
+                  <xsl:when test="$CurrentLang='it'"><a class="menu" href="http://www.dszv.it/it/crediti/"><xsl:value-of select="i18n:translate('dszv.imprint')" /></a></xsl:when>
+                  <xsl:otherwise><a class="menu" href="http://www.dszv.it/de/impressum/"><xsl:value-of select="i18n:translate('dszv.imprint')" /></a></xsl:otherwise>
+                </xsl:choose>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -84,12 +110,9 @@
   <xsl:template name="mir.footer">
     <div class="container">
         <div id="menu" class="row">
-            <div class="col-xs-6">
-                <ul id="sub_menu">
-                  <xsl:for-each select="$loaded_navigation_xml/menu[@id='below']/item">
-                    <xsl:apply-templates select="." />
-                  </xsl:for-each>
-                </ul>
+            <div class="col-xs-6 small">
+                Deutsches Studienzentrum in Venedig | Palazzo Barbarigo della Terrazza | S.Polo 2765/a Calle Corner 30125 Venezia
+                Tel. 0039 041 5206355 | Fax. 0039 041 5206780 | www.dszv.it
             </div>
             <div class="col-xs-6">
                 <div id="copyright">© <xsl:value-of select="$MCR.NameOfProject" /> 2017</div>
