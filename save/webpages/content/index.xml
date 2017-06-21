@@ -91,7 +91,7 @@
             ostacolare la pubblicazione commerciale.
           </p>
           </div>
-          <div class="col-md-4 borderbox" lang="it">
+          <div class="col-md-4 dszv_borderbox" lang="it">
             <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
             <h3 class="text-uppercase">Documenti attuali</h3>
             <p>Nel server di documenti attualmente sono <span id="doc_count">[Anz]</span> record.</p>

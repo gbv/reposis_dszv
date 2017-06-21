@@ -112,7 +112,7 @@
         <div id="menu" class="row">
             <div class="col-xs-6 small">
                 Deutsches Studienzentrum in Venedig | Palazzo Barbarigo della Terrazza | S.Polo 2765/a Calle Corner 30125 Venezia
-                Tel. 0039 041 5206355 | Fax. 0039 041 5206780 | www.dszv.it
+                Tel. 0039 041 5206355 | Fax. 0039 041 5206780 | <a href="http://www.dszv.it" title="Home">www.dszv.it</a>
             </div>
             <div class="col-xs-6 small">
                 <div id="copyright">© <xsl:value-of select="$MCR.NameOfProject" /> 2017</div>
