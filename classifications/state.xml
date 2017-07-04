@@ -13,7 +13,7 @@
     <category ID="review">
       <label xml:lang="en" text="in review" />
       <label xml:lang="de" text="wird bearbeitet" />
-      <label xml:lang="it" text=" lavorazione" />
+      <label xml:lang="it" text="in lavorazione" />
     </category>
     <category ID="published">
       <label xml:lang="en" text="published" />
@@ -22,7 +22,7 @@
     </category>
     <category ID="blocked">
       <label xml:lang="en" text="blocked" />
-      <label xml:lang="it" text="chiuso" />
+      <label xml:lang="it" text="bloccato" />
       <label xml:lang="de" text="gesperrt" />
     </category>
     <category ID="deleted">
