@@ -89,7 +89,7 @@
     <item href="/content/publish/contract.xml" type="intern">
       <label xml:lang="de">Vertragsbedingungen</label>
       <label xml:lang="en">Terms &amp; Conditions</label>
-      <label xml:lang="it">Risoluzioni di contratti</label>
+      <label xml:lang="it">Termini e condizioni</label>
     </item>
   </menu>
   <menu id="user">

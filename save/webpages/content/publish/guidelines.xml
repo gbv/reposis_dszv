@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+<section xml:lang="de" title="Leitlinie Schriftenserver">
+
+    <h2>Leitlinien für den Betrieb des Schriftenservers</h2>
+    <h3>1. Ziele und inhaltliche Kriterien für den Schriftenserver des Deutschen Studienzentrums in Venedig</h3>
+    <p>
+      Der Schriftenserver bietet allen mit dem Deutschen Studienzentrum verbundenen Wissenschaftlerinnen
+      und Wissenschaftlern und anderen Venedig-Expert/inn/en die organisatorischen und technischen
+      Rahmenbedingungen zur elektronischen Publikation wissenschaftlicher Dokumente. Der Schriftenserver
+      ist ein Service des Deutschen Studienzentrums in Venedig.
+    </p>
+    <p>
+      Die elektronischen Dokumente erhalten dauerhafte Adressen und werden über nationale und internationale
+      Bibliothekskataloge, Suchmaschinen sowie andere Nachweisinstrumente erschlossen. Darüber hinaus wird
+      eine Langzeitarchivierung der elektronischen Dokumente gewährleistet (mindestens 5 Jahre).
+    </p>
+
+    <h3>2. Der Sammelauftrag des Deutschen Studienzentrums in Venedig für elektronische Dokumente</h3>
+    <p>
+      Der Sammelauftrag des Deutschen Studienzentrums in Venedig umfasst die Speicherung, Katalogisierung
+      und Archivierung aller elektronischen Dokumente, die durch Wissenschaftlerinnen und Wissenschaftler,
+      die dem Deutschen Studienzentrum verbunden sind, veröffentlicht werden, bzw. durch Experten/innen
+      für die Kultur und Geschichte Venedigs. Dies bezieht sich sowohl auf rein elektronische Publikationen
+      als auch auf elektronische Versionen gedruckter Dokumente.
+    </p>
+    <p>
+      Die Urheberrechte der Autorinnen und Autoren bleiben gewahrt. Die Veröffentlichung auf dem Schriftenserver
+      steht einer weiteren Veröffentlichung der Dokumente in Fachzeitschriften oder Monografien sowie auf
+      anderen Servern nicht entgegen. Gemäß den Empfehlungen des Wissenschaftsrats werden alle Wissenschaftlerinnen
+      und Wissenschaftler in Deutschland aufgefordert, sich beim Abschluss von Verlagsverträgen ein entsprechendes
+      weiteres Nutzungsrecht zu sichern und die von ihnen verfassten Dokumente zusätzlich - eventuell nach einer
+      Sperrfrist - auf dem Schriftenserver zu veröffentlichen.
+    </p>
+    <p>
+      Die Einhaltung von Urheber- und Verwertungsrechten Dritter liegt in der Verantwortung der Autorinnen und
+      Autoren bzw. der Herausgeber/innen der elektronischen Dokumente.
+    </p>
+
+    <h3>3. Das elektronische Dokument</h3>
+    <p>
+      Unter dem Begriff „elektronisches Dokument” wird im Sinne dieser Leitlinien ein Dokument verstanden,
+      welches auf Text, Grafik, Audio- oder Video-Sequenzen basiert, in digitaler Form auf einem Datenträger
+      gespeichert ist und über Rechnernetze verbreitet wird.
+    </p>
+    <p>
+      Ein über den Schriftenserver zu veröffentlichendes elektronisches Dokument erfüllt folgende Bedingungen:
+    </p>
+    <ol>
+      <li>
+        Es ist zur Verbreitung in der Öffentlichkeit bestimmt.
+      </li>
+      <li>
+        Es stellt kein dynamisches Dokument dar. Sind Veränderungen notwendig, wird das geänderte
+        elektronische Dokument als neue Version gespeichert.
+      </li>
+      <li>
+        Es entspricht den vom Deutschen Studienzentrum vorgegebenen technischen Parametern.
+      </li>
+    </ol>
+
+    <h3>4. Elektronische Dokumente, die über den Schriftenserver veröffentlicht und verbreitet werden</h3>
+    <p>
+      Folgende Kategorien elektronischer Dokumente werden gespeichert und über den Schriftenserver verbreitet:
+    </p>
+    <ul>
+      <li>
+        Publikationen und Publikationsreihen des Deutschen Studienzentrums in Venedig mit wissenschaftlichen Inhalten.
+      </li>
+      <li>
+        Dokumente von aktuellen und ehemaligen Stipendiatinnen und Stipendiaten des Deutschen Studienzentrums
+        in Venedig, (vor allem Dissertationen) sowie Publikationen von Mitgliedern des Vereins Deutsches
+        Studienzentrum in Venedig e. V., soweit diese in den Rahmen des Sammelauftrags des DSZV fallen.
+      </li>
+      <li>
+        Publikationen von mit dem Deutschen Studienzentrums in Venedig assoziierten Einrichtungen und Personen
+        und Venedig-Forscher/innen.
+      </li>
+    </ul>
+
+    <h3>5. Technische Besonderheiten des Schriftenservers</h3>
+    <ol>
+      <li>
+        Die elektronischen Dokumente werden mit individuellen und dauerhaften Adressen versehen, welche einen
+        unmittelbaren Zugriff auf die Dokumente erlauben. Die Adressen werden als URNs (Uniform Resource Name)
+        registriert. Die Administration und Pflege der URNs wird vom Deutschen Studienzentrum in Venedig garantiert.
+      </li>
+      <li>
+        Das Auffinden der elektronischen Dokumente ist über Bibliothekskataloge, Recherchen in bibliografischen
+        Metadaten, über alphabetische und klassifikatorische Ordnungen sowie dynamisch erstellte Listen und Indizes
+        möglich.
+      </li>
+      <li>
+        Die Archivierungsdauer der Formate hängt von der Verfügbarkeit des Formates, der Betrachtungssoftware sowie
+        den Konvertierungsmöglichkeiten ab. Die Archivierungsdauer beträgt mindestens 5 Jahre.
+      </li>
+    </ol>
+
+    <h3>6. Organisatorische Regelungen</h3>
+    <ol>
+      <li>
+        Der Schriftenserver wird vom Deutschen Studienzentrum in Venedig betrieben. Die technische Betreuung des
+        Katalogsystems (Rechercheinstrument für den Publikationsserver) erfolgt durch die Verbundzentrale des
+        Gemeinsamen Bibliotheksverbundes (VZG).
+      </li>
+      <li>
+        Die elektronische Veröffentlichung von Publikationen ist für die mit dem Deutschen Studienzentrum
+        verbundenen Wissenschaftlerinnen und Wissenschaftler, wie auch für Venedig-Forscher/innen unterschiedlicher
+        Herkunft kostenfrei.
+      </li>
+      <li>
+        Für die Veröffentlichung notwendige zusätzliche Arbeiten wie die Aufbereitung der elektronischen Dokumente
+        oder die Konvertierung in andere Formate werden von den Mitarbeiterinnen und Mitarbeitern des Deutschen
+        Studienzentrums in Venedig nach Absprache betreut oder durchgeführt. Arbeiten, die einen bedeutenden Mehraufwand
+        erfordern, werden in Rechnung gestellt.
+      </li>
+      <li>
+        Ansprechpartnerin für alle den Schriftenserver des DSZV betreffenden Fragen ist:<br />
+        Michaela Böhringer<br />
+        Tel.: 0039-041-5206355<br />
+        E-Mail: m.boehringer@dszv.it<br />
+        Deutsches Studienzentrum in Venedig<br />
+        Palazzo Barbarigo della Terrazza<br />
+        S. Polo 2765/A<br />
+        Calle Corner<br />
+        I-30125 Venezia
+      </li>
+    </ol>
+    <p>
+      Wir danken der Arbeitsgruppe Elektronisches Publizieren an der Humboldt-Universität zu Berlin
+      und den Kolleginnen der Universität der TU Clausthal. Deren Leitlinie für Hochschulschriftenserver wurden
+      hier als Vorlage benutzt.
+    </p>
+
+</section>
+
+<section xml:lang="it" title="Linee guida">
+
+    <h2>Linee guida per il funzionamento del repository</h2>
+    <h3>1. Scopi e criteri per il repository del Centro Tedesco di Studi Veneziani</h3>
+    <p>
+      Il repository è un servizio del Centro Tedesco di Studi Veneziani che offre ai propri membri e ad
+      altri esperti della cultura veneziana la struttura tecnica e organizzativa per pubblicare
+      elettronicamente i propri documenti scientifici e artistici.
+    </p>
+    <p>
+      I documenti elettronici ricevono degli indirizzi permanenti e sono rintracciabili nei
+      cataloghi delle biblioteche nazionali e internazionali. Inoltre viene garantita una
+      archiviazione a lungo termine (di almeno 5 anni).
+    </p>
+
+    <h3>2. Lo scopo del repository del Centro Tedesco di Studi Veneziani</h3>
+    <p>
+      Lo scopo del repository comprende il salvataggio, la catalogazione e l’archiviazione di tutti
+      i documenti elettronici pubblicati dai studiosi e studiose di cultura veneziana. Questo si
+      riferisce sia alle pubblicazioni puramente elettroniche che alla forma elettronica di documenti
+      cartacei.
+    </p>
+    <p>
+      I diritti d’autore restano intatti. La pubblicazione sul repository non impedisce una ulteriore
+      pubblicazione dei documenti in riviste specialistiche, monografie o in altri repositories. Il
+      Consiglio Scientifico di Stato della Germania raccomanda a tutti gli studiosi di garantirsi un
+      ulteriore diritto di utilizzo nel momento della stipula di contratti con le case editrici e di
+      pubblicazione dei propri documenti, eventualmente dopo un periodo di blocco, su un repository.
+    </p>
+    <p>
+      Il rispetto del diritto d’autore e dei diritti di utilizzazione commerciale di terzi è
+      responsabilità degli autori/curatori dei documenti elettronici.
+    </p>
+
+    <h3>3. Il documento elettronico</h3>
+    <p>
+      La dicitura „Documento elettronico“ caratterizza, all’interno di queste linee guida, un
+      documento che si basa su sequenze di testo, grafica, audio o video, che sono salvate in
+      forma digitale su un database e che viene diffuso mediante reti informatiche.
+    </p>
+    <p>
+      Un documento che viene pubblicato attraverso il repository soddisfa le seguenti condizioni:
+    </p>
+    <ol>
+      <li>
+        E‘ destinato alla diffusione pubblica.
+      </li>
+      <li>
+        Non costituisce un documento dinamico. In caso di necessità di cambiamenti, il nuovo
+        documento elettronico viene salvato come una versione nuova.
+      </li>
+      <li>
+        Corrisponde ai parametri tecnici indicati dal Centro Tedesco di Studi Veneziani.
+      </li>
+    </ol>
+
+    <h3>4. Documenti elettronici che vengono pubblicati e nel repository e diffusi da esso</h3>
+    <p>
+      Vengono salvate e diffuse attraverso il repository le seguenti categorie:
+    </p>
+    <ul>
+      <li>
+        Pubblicazioni e collane di pubblicazioni del Centro Tedesco di Studi Veneziani con contenuti scientifici.
+      </li>
+      <li>
+        Documenti di borsisti ed ex-borsisti del Centro Tedesco (soprattutto tesi di dottorato) e pubblicazioni
+        di membri dell’associazione del Centro Tedesco, se questi aderiscono alle tematiche che il repository
+        del DSZV si è proposto.
+      </li>
+      <li>
+        Pubblicazioni di istituzioni e persone associate con il DSZV e di studiosi di cultura veneziana.
+      </li>
+    </ul>
+
+    <h3>5. Particolarità tecniche del repository</h3>
+    <ol>
+      <li>
+        I documenti elettronici ricevono degli indirizzi individuali e permanenti, i quali permettono un
+        accesso ai documenti. Gli indirizzi vengono registrati come URN (Uniform Resource Name).
+        L’amministrazione e la manutenzione degli URN viene garantito dal Centro Tedesco.
+      </li>
+      <li>
+        I documenti elettronici possono essere reperiti  nei cataloghi delle biblioteche e nei metadati
+        bibliografici, attraverso ordinamenti alfabetici e classificatori, come anche in liste e indici
+        originate in modo dinamico.
+      </li>
+      <li>
+        La durata dell’archiviazione dei formati dipende dalla loro reperibilità, dalla modalità di
+        visualizzazione come anche dalle possibilità di conversione. La durata di archiviazione è di almeno 5 anni.
+      </li>
+    </ol>
+
+    <h3>6. Regole di organizzazione</h3>
+    <ol>
+      <li>
+        Il repository viene gestito dal DSZV. La cura tecnica del sistema di catalogazione (strumento di
+        ricerca per il server per la pubblicazione) è a carico della Verbundzentrale des Gemeinsamen
+        Bibliotheksverbundes (VZG), (Centrale dell’associazione comune delle biblioteche tedesche dei
+        Länder Bremen, Hamburg, Mecklenburg-Vorpommern, Niedersachsen, Sachsen-Anhalt, Schleswig-Holstein,
+        Thüringen e della Stiftung Preußischer Kulturbesitz).
+      </li>
+      <li>
+        Il Centro Tedesco di Studi Veneziani offre gratuitamente la pubblicazione elettronica agli esperti
+        di cultura veneziana.
+      </li>
+      <li>
+        Previo accordo, il lavoro aggiuntivo per la pubblicazione come l’ulteriore elaborazione dei
+        documenti elettronici o la conversione in altri formati può avvenire a cura delle
+        collaboratrici/collaboratori del Centro Tedesco. Per le operazioni che richiedono un surplus
+        notevole di lavoro vengono considerati dei costi.
+      </li>
+      <li>
+        Persona di riferimento per tutte le questioni riguardanti il repository del DSZV:<br /><br />
+        Dott.ssa Michaela Böhringer<br />
+        Tel.: 0039-041-5206355<br />
+        E-Mail: m.boehringer@dszv.it<br /><br />
+        Centro Tedesco di Studi Veneziani<br />
+        Deutsches Studienzentrum in Venedig<br />
+        Palazzo Barbarigo della Terrazza<br />
+        S. Polo 2765/A<br />
+        Calle Corner<br />
+        I-30125 Venezia
+      </li>
+    </ol>
+    <p>
+      Ringraziamo la Arbeitsgruppe Elektronisches Publizieren della Humboldt-Universität di Berlino e i
+      colleghi della Università di Clausthal. Le linee guida del loro repository sono stati  utilizzati
+      qui come guida.
+    </p>
+  </section>
+
+<meta>
+  <log date="2014-03-25" time="16:26" labelPath=" » Admin" lastEditor="Kathleen Neumann" />
+</meta>
+</MyCoReWebPage>
