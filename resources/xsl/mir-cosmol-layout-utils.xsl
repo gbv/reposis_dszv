@@ -57,12 +57,14 @@
           <xsl:otherwise><a href="?lang=it"><xsl:value-of select="i18n:translate('dszv.language')"/></a></xsl:otherwise>
         </xsl:choose>
       </div>
-      <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form form-inline" role="search">
-        <div class="form-group">
-          <input name="condQuery" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
-        </div>
-        <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-      </form>
+      <div class="searchfield_box">
+        <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form form-inline" role="search">
+          <div class="form-group">
+            <input name="condQuery" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
+          </div>
+          <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+        </form>
+      </div>
     </div>
   </xsl:template>
 
