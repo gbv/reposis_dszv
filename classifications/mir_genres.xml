@@ -69,10 +69,10 @@
       </category>
       <category ID="habilitation">
         <label xml:lang="de" text="Habilitation" />
-        <label xml:lang="x-hosts" text="series standalone" />
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:doctoralThesis XMetaDissPlusThesisLevel:thesis.habilitation" />
-        <label xml:lang="en" text="Habilitation" />
+        <label xml:lang="x-hosts" text="series standalone" />
         <label xml:lang="it" text="Tesi di abilitazione alla libera docenza" />
+        <label xml:lang="en" text="Habilitation" />
       </category>
       <category ID="diploma_thesis">
         <label xml:lang="it" text="Tesi di diploma" />
@@ -89,8 +89,8 @@
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:master" />
       </category>
       <category ID="bachelor_thesis">
-        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:bachelorThesis XMetaDissPlusThesisLevel:bachelor" />
         <label xml:lang="it" text="Tesi di laurea triennale" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:bachelorThesis XMetaDissPlusThesisLevel:bachelor" />
         <label xml:lang="de" text="Abschlussarbeit (Bachelor)" />
         <label xml:lang="en" text="Bachelor thesis" />
         <label xml:lang="x-hosts" text="series standalone" />
@@ -133,9 +133,9 @@
       <category ID="lexicon">
         <label xml:lang="x-mapping" text="marcgt:encyclopedia diniPublType:book" />
         <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="de" text="Lexikon" />
         <label xml:lang="en" text="Lexicon" />
         <label xml:lang="it" text="Lessico" />
-        <label xml:lang="de" text="Lexikon" />
       </category>
     </category>
     <category ID="report">
@@ -173,27 +173,6 @@
         <label xml:lang="it" text="Parere di esperti" />
       </category>
     </category>
-    <category ID="teaching_material">
-      <label xml:lang="de" text="Lehrmaterial" />
-      <label xml:lang="x-hosts" text="standalone lecture" />
-      <label xml:lang="x-mapping" text="marcgt:instruction diniPublType:CourseMaterial" />
-      <label xml:lang="en" text="Teaching Resource" />
-      <label xml:lang="it" text="Materiale didattico" />
-      <category ID="lecture_resource">
-        <label xml:lang="x-hosts" text="standalone lecture" />
-        <label xml:lang="x-mapping" text="marcgt:instruction diniPublType:CourseMaterial" />
-        <label xml:lang="de" text="Vorlesungsmaterial" />
-        <label xml:lang="en" text="Lecture Resource" />
-        <label xml:lang="it" text="Resource Lecture" />
-      </category>
-      <category ID="course_resources">
-        <label xml:lang="x-hosts" text="standalone lecture" />
-        <label xml:lang="x-mapping" text="marcgt:instruction diniPublType:CourseMaterial" />
-        <label xml:lang="de" text="Kurs- und Seminarmaterial" />
-        <label xml:lang="en" text="Course Resources" />
-        <label xml:lang="it" text="Risorse del corso" />
-      </category>
-    </category>
     <category ID="book">
       <label xml:lang="it" text="Libro" />
       <label xml:lang="de" text="Buch" />
@@ -203,17 +182,10 @@
     </category>
     <category ID="journal">
       <label xml:lang="x-hosts" text="standalone" />
-      <label xml:lang="de" text="Zeitschrift" />
       <label xml:lang="en" text="Journal" />
+      <label xml:lang="de" text="Zeitschrift" />
       <label xml:lang="it" text="Rivista" />
       <label xml:lang="x-mapping" text="marcgt:journal diniPublType:Periodical" />
-    </category>
-    <category ID="newspaper">
-      <label xml:lang="x-hosts" text="standalone" />
-      <label xml:lang="en" text="Newspaper" />
-      <label xml:lang="it" text="Giornale" />
-      <label xml:lang="x-mapping" text="marcgt:newspaper diniPublType:Periodical" />
-      <label xml:lang="de" text="Zeitung" />
     </category>
     <category ID="series">
       <label xml:lang="x-hosts" text="standalone" />
@@ -274,16 +246,9 @@
     <category ID="broadcasting">
       <label xml:lang="x-hosts" text="standalone" />
       <label xml:lang="x-mapping" text="marcgt:videorecording diniPublType:report" />
+      <label xml:lang="it" text="Programma televisivo o radiofonico" />
       <label xml:lang="de" text="Sendung" />
-      <label xml:lang="it" text="Emittente" />
       <label xml:lang="en" text="Broadcasting" />
-    </category>
-    <category ID="lecture">
-      <label xml:lang="x-hosts" text="standalone" />
-      <label xml:lang="de" text="Vorlesung" />
-      <label xml:lang="en" text="Lecture" />
-      <label xml:lang="x-mapping" text="marcgt:series diniPublType:lecture" />
-      <label xml:lang="it" text="Lezione" />
     </category>
   </categories>
 </mycoreclass>

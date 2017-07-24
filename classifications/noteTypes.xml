@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="noteTypes">
+  <label xml:lang="de" text="Kommentartyp" />
+  <label xml:lang="it" text="Tipo di indicazione" />
+  <label xml:lang="en" text="Type of note" />
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/noteTypes" />
+  <categories>
+    <category ID="thesis">
+      <label xml:lang="en" text="Dissertation note" />
+      <label xml:lang="x-access" text="guest" />
+      <label xml:lang="de" text="Hochschulvermerk" />
+      <label xml:lang="it" text="Pubblicazione universitaria" />
+    </category>
+    <category ID="date">
+      <label xml:lang="de" text="Datum" />
+      <label xml:lang="en" text="date" />
+      <label xml:lang="x-access" text="guest" />
+      <label xml:lang="it" text="Data" />
+    </category>
+    <category ID="content">
+      <label xml:lang="x-access" text="guest" />
+      <label xml:lang="de" text="Inhalt" />
+      <label xml:lang="en" text="content" />
+      <label xml:lang="it" text="Contenuto" />
+    </category>
+    <category ID="admin">
+      <label xml:lang="en" text="intern comment" />
+      <label xml:lang="de" text="interner Kommentar" />
+      <label xml:lang="x-access" text="editor admin" />
+      <label xml:lang="it" text="Commento interno" />
+    </category>
+  </categories>
+</mycoreclass>
