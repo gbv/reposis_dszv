@@ -111,6 +111,13 @@
                   <xsl:otherwise><a href="http://www.dszv.it/de/impressum/"><xsl:value-of select="i18n:translate('dszv.imprint')" /></a></xsl:otherwise>
                 </xsl:choose>
               </li>
+              <li>
+                <xsl:choose>
+                  <xsl:when test="$CurrentLang='it'"><a href="https://www.iubenda.com/privacy-policy/7992015/legal"><xsl:value-of select="i18n:translate('dszv.privacy')" /></a></xsl:when>
+                  <xsl:otherwise><a href="https://www.iubenda.com/privacy-policy/33631120/legal"><xsl:value-of select="i18n:translate('dszv.privacy')" /></a></xsl:otherwise>
+                </xsl:choose>
+                
+              </li>
             </ul>
           </li>
         </ul>
