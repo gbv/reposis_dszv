@@ -126,7 +126,7 @@
                 Tel. 0039 041 5206355 | Fax. 0039 041 5206780 | <a href="http://www.dszv.it" title="Home">www.dszv.it</a>
             </div>
             <div class="col-xs-6 small">
-                <div id="copyright">© <xsl:value-of select="$MCR.NameOfProject" /> 2017</div>
+                <div id="copyright">© <xsl:value-of select="$MCR.NameOfProject" /> 2018</div>
             </div>
         </div>
         <div id="credits" class="row">
