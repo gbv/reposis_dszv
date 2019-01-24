@@ -4,7 +4,8 @@
   xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
   xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
   xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-  exclude-result-prefixes="i18n mcrver mcrxsl">
+  xmlns:calendar="xalan://java.util.GregorianCalendar"
+  exclude-result-prefixes="i18n mcrver mcrxsl calendar">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
 
@@ -61,7 +62,7 @@
       <div class="searchfield_box">
         <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form form-inline" role="search">
           <div class="form-group">
-            <input name="condQuery" placeholder="{i18n:translate('mir.cosmol.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
+            <input name="condQuery" placeholder="{i18n:translate('mir.navsearch.placeholder')}" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="form-control search-query" id="searchInput" type="text" />
             <xsl:choose>
                 <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
                   <input name="owner" type="hidden" value="createdby:*" />
@@ -71,7 +72,7 @@
                 </xsl:when>
               </xsl:choose>
           </div>
-          <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+          <button type="submit" title="{i18n:translate('mir.cosmol.navsearch.title')}" class="btn btn-primary"><span class="fa fa-search"></span></button>
         </form>
       </div>
     </div>
@@ -86,6 +87,7 @@
           <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
           <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
           <xsl:call-template name="mir.basketMenu" />
+          <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='misc']" />
 
           <li class="dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dszvLibrary"><xsl:value-of select="i18n:translate('dszv.library')" /><span class="caret"></span></a>
@@ -133,7 +135,13 @@
                 Tel. 0039 041 5206355 | Fax. 0039 041 5206780 | <a href="http://www.dszv.it" title="Home">www.dszv.it</a>
             </div>
             <div class="col-xs-6 small">
-                <div id="copyright">© <xsl:value-of select="$MCR.NameOfProject" /> 2018</div>
+                <xsl:variable name="tmp" select="calendar:new()"/>
+                <div id="copyright">
+                    <xsl:text>© </xsl:text>
+                    <xsl:value-of select="$MCR.NameOfProject" />
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="calendar:get($tmp, 1)"/>
+                </div>
             </div>
         </div>
         <div id="credits" class="row">
