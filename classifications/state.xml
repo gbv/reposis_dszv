@@ -6,7 +6,7 @@
   <label xml:lang="it" text="stato dell'oggetto" />
   <categories>
     <category ID="submitted">
-      <label xml:lang="it" text=" presentata" />
+      <label xml:lang="it" text=" presentato" />
       <label xml:lang="de" text="eingereicht" />
       <label xml:lang="en" text="submitted" />
     </category>
