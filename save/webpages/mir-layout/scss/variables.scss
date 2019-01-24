@@ -1,0 +1,21 @@
+$web-font-path: "https://webfonts.gbv.de/css?family=Source+Sans+Pro:300,400,700";
+
+$gray-darker:        #b6b6b6;
+$brand-primary:      rgb(169, 72, 36);
+$brand-success:      #75C2B1;
+$brand-info:         #E7C675;
+$brand-warning:      rgb(255, 153, 0);
+$brand-danger:       #E6432E;
+
+$font-family-sans-serif:    "Lucida Sans Unicode",sans-serif;
+$font-size-base:            14px;
+
+$font-size-h1:      floor(($font-size-base * 2));
+$font-size-h2:      floor(($font-size-base * 1.7));
+$font-size-h3:      ceil(($font-size-base * 1.25));
+$font-size-h4:      $font-size-base;
+$font-size-h5:      ceil(($font-size-base * 0.85));
+$font-size-h6:      ceil(($font-size-base * 0.85));
+
+$text-color:        #625E51;
+$headings-color:    #625E51;
