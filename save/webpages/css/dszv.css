@@ -256,3 +256,7 @@ ul {
 .viewer .btn {
     padding: 6px 10px;
 }
+
+label {
+  font-weight: normal;
+}
