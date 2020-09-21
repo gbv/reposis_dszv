@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Hinweis zur Barrierefreiheit">
+    <div class="row">
+      <div class="col-12">
+
+        <h1> Erklärung zur Barrierefreiheit <small class="text-muted">(Stand der Erklärung:
+            21.09.2020)</small>
+        </h1>
+
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+
+        <p> Das Deutsche Studienzentrum in Venedig ist bemüht, die Dokumente seines Repositorys
+          (<a href="https://repository.dszv.it/">repository.dszv.it</a>) im Einklang mit den
+          nationalen Rechtsvorschriften zur Umsetzung der Richtlinie (EU) 2016/2102 des Europäischen
+          Parlaments und des Rates barrierefrei zugänglich zu machen. </p>
+      </div>
+    </div>
+
+
+    <div class="row mt-3">
+      <div class="col-12">
+
+        <h2> Stand der Vereinbarung mit den Anforderungen </h2>
+
+        <p>Aufgrund der Überprüfung ist die Webseite mit den zuvor genannten Anforderungen
+          nicht an allen Stellen vereinbar. Die Webseite <a href="https://repository.dszv.it/">repository.dszv.it</a>
+          ist aus den folgenden Gründen noch nicht abschließend barrierefrei:</p>
+
+        <dl>
+          <dt>Im Webauftritt eingebundene Dokumente (.pdf, .doc, etc.)</dt>
+          <dd class="ml-4">
+            Aus einer stichprobeartigen professionellen Überprüfung des Repositorys resultiert, dass ein Großteil der darin enthaltenen Dokumente bisher nicht barrierefrei ist. <br />
+            Die Dokumente bestehen aus von Verlagen für das Deutsche Studienzentrum herausgegebenen Publikationen, die in Papierform erschienen sind und dort als PDF für die Allgemeinheit zur Verfügung gestellt werden. Bei der im Repository enthaltenen Quaderni-Reihe handelt es sich beispielsweise um alte Dokumente, bei denen das Ausgangsdokument nicht mehr vorliegt. Andere Dokumente bestehen aus Beiträgen von ehemaligen Stipendiatinnen und Stipendiaten in Publikationen von Dritter Seite oder aus Kunstwerken wie Partituren, Gedichten oder einem Video (ohne Tonspur mit Inhalten), welche aus der Stipendienzeit von Kunststipendiatinnen und Kunststipendiaten des Deutschen Studienzentrums hervorgegangen sind. Diese Dokumente wurden dem Deutschen Studienzentrum von Dritter Seite zur Verfügung gestellt. <br />
+            Wir haben uns zum Ziel gesetzt, zukünftig eigene Dokumente so weit wie möglich und zweckmäßig barrierefrei einzustellen.  <br />
+            Sollten Sie Inhalte von Dokumenten in einer für Sie zugänglichen Form benötigen, wenden Sie sich bitte an uns. Wir werden versuchen, Ihnen diese so weit wie möglich auf einem anderen Weg zur Verfügung zu stellen.
+          </dd>
+          
+          <dt>Im Webauftritt enthaltene Informationen in Gebärdensprache und
+            in leichter Sprache</dt>
+          <dd class="ml-4">
+            Wir streben an, eine möglichst einfache Sprache zu benutzen. Auf Grund der
+            komplexen Inhalte, die zumindest teilweise in unseren Webauftritten
+            veröffentlicht werden, ist eine einfache Sprachgestaltung (beispielsweise
+            der Verzicht auf Fachbegriffe) nicht immer möglich.
+          </dd>
+
+          <dt>Im Webauftritt eingebundene Videos</dt>
+          <dd class="ml-4">Die Bereitstellung der Videos mit einer Audiodeskription konnte bislang
+              nicht realisiert werden.</dd>
+          
+          <dt>Alternativtexte (1.1.1 a-c )</dt>
+          <dd class="ml-4">An einigen Stellen fehlen die Alternativtexte. Bei einem nächsten Update werden diese ergänzt werden.</dd>
+          
+          <dt>HTML-Strukurelemente (1.3.1 a-f )</dt>
+          <dd class="ml-4">Einige HTML-Strukurelemente sind nur teilweise barrierefrei, da die entsprechenden Bootstrap-Klassen fehlen.
+            Eine Überarbeitung ist in Arbeit.</dd>
+          
+          <dt>Eingabefelder zu Nutzerdaten vermitteln den Zweck (1.3.5a)</dt>
+          <dd class="ml-4">Formulare nutzen keine Autovervollständigung. Bei Formularen fehlen die „autocomplete“-Attribute, was das Ausfüllen der Formulare erschwert.
+            Bei einem Update soll die Funktionalität künftig ergänzt werden.</dd>
+          
+          <dt>Kontraste von Texten ausreichend (1.4.3)</dt>
+          <dd class="ml-4">Da das grundsätzliche Layout der Webseite vor dem Erscheinen der Richtlinie (EU) 2016/2102 erstellt wurde, ist das Kontrastverhältnis von 4,5:1 nicht grundsätzlich sichergestellt.
+            An einer Lösung wird gearbeitet.</dd>
+          
+          <dt>Aktuelle Position des Fokus deutlich (2.4.7a)</dt>
+          <dd class="ml-4">Der Fokus ist bei der Bedienung mit der Tastatur nicht immer erkennbar.
+            Die Anpassung des Fokus-Managements erfolgt bei der nächsten grundlegenden Überarbeitung der Website.</dd>
+          
+          <dt>Fehlererkennung (3.3.1a)</dt>
+          <dd class="ml-4">Angaben in Formularen werden vor dem Abschicken nicht automatisch überprüft. 
+            Bei der nächsten grundlegenden Überarbeitung der Website soll die Funktionalität künftig ergänzt werden.</dd>
+          
+          <dt>Statusmeldungen programmatisch verfügbar (4.1.3a)</dt>
+          <dd class="ml-4">Es erfolgt weder visuell noch im Screenreader ein Hinweis das, das Dokument auf die Merkliste gesetzt wurde.
+            Die entsprechende "Role" wird im Rahmen eines Updates ergänzt.</dd>
+        </dl>
+        <p>Die identifizierten technischen Defizite und Mängel befinden sich aktuell in einem kontinuierlichen Verbesserungsprozess,
+          der sukzessive abgearbeitet wird.</p>
+      </div>
+    </div>
+
+
+    <div class="row mt-3">
+      <div class="col-12">
+        <h2> Erstellung dieser Erklärung zur Barrierefreiheit </h2>
+
+        <p>
+          Diese Erklärung wurde am 21.09.2020 erstellt.
+          Die Einschätzung basiert auf einer Selbstbewertung.</p>
+      </div>
+    </div>
+
+
+    
+    <div class="row mt-3">
+      <div class="col-12">
+        <h2> Feedback und Kontaktangaben </h2>
+
+        <p>Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten unseres Repositorys aufgefallen? Dann können Sie sich gerne bei uns per Mail melden. Sie können uns auch per Post oder telefonisch kontaktieren:</p>
+
+        <p class="border-left pl-5">
+          Deutsches Studienzentrum in Venedig (DSZV)<br />
+          E-Mail: <span class="madress">m.boehringer [at] dszv.it</span><br /><br />
+          
+          Postadresse:<br />
+          Centro Tedesco di Studi Veneziani<br />
+          Deutsches Studienzentrum in Venedig<br />
+          Palazzo Barbarigo della Terrazza<br />
+          S. Polo 2765/A, Calle Corner<br />
+          I – 30125 Venezia<br /><br />
+          
+          Telefon<br />
+          0039-041-5206355
+        </p>
+      </div>
+    </div>
+
+
+    
+    <div class="row mt-3">
+      <div class="col-12">
+        <h2> Schlichtungsverfahren </h2>
+
+        <p>Beim Beauftragten der Bundesregierung für die Belange von Menschen mit Behinderungen gibt es eine Schlichtungsstelle gemäß § 16 BGG. Die Schlichtungsstelle hat die Aufgabe, Konflikte zwischen Menschen mit Behinderungen und öffentlichen Stellen des Bundes zu lösen.</p>
+        <p>Sollten Sie der Ansicht sein, durch eine nicht ausreichende barrierefreie Gestaltung der Dokumente des Repositorys des Deutschen Studienzentums benachteiligt zu sein, können Sie sich an die Schlichtungsstelle  BGG wenden:</p>
+        <p>Auf der Internetseite der Schlichtungsstelle finden Sie alle Informationen zum Schlichtungsverfahren. Dort können Sie nachlesen, wie ein Schlichtungsverfahren abläuft und wie Sie den Antrag auf Schlichtung stellen. Sie können den Antrag auch in Leichter Sprache oder in Deutscher Gebärdensprache stellen.</p>
+        <p>Sie erreichen die Schlichtungsstelle unter folgender Adresse:</p>
+        <p class="border-left pl-5">
+          Landesamt für Digitalisierung, Breitband und Vermessung<br />
+          IT-Dienstleistungszentrum des Freistaats Bayern<br />
+          Durchsetzungs- und Überwachungsstelle für barrierefreie Informationstechnik<br />
+          St.-Martin-Straße 47<br />
+          81541 München<br />
+          E-Mail: <span class="madress">bitvr [at] bayern.de</span><br />
+          Internet: <a href="https://www.ldbv.bayern.de/digitalisierung/bitv.html">www.ldbv.bayern.de/digitalisierung/bitv.html</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="mboehringer" date="2020-09-21" time="11:24"/>
+  </meta>
+</MyCoReWebPage>

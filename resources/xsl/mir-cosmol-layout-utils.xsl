@@ -120,6 +120,9 @@
                 </xsl:choose>
                 
               </li>
+              <li>
+                <a href="{$WebApplicationBaseURL}content/below/accessibility.xml"><xsl:value-of select="i18n:translate('dszv.accessibility')" /></a>
+              </li>
             </ul>
           </li>
         </ul>
