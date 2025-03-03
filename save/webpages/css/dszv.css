@@ -60,7 +60,13 @@ h1, .h1{
 }
 
 #site_logo img {
-  margin-left:40px;
+  width:100%;
+}
+
+#site_logo a {
+  padding-left: 50px; 
+  padding-right: 20px; 
+  display: block;  
 }
 
 .dszv_borderbox {
@@ -269,18 +275,4 @@ label, .label {
 #project_slogan {
   font-size: 18px;
   font-weight: 400;
-}
-
-/**** FIXME: remove in LTS2019, already fixed there *********/
-.pl-5, .px-5 {
-  padding-left: 3rem !important;
-}
-.ml-4, .mx-4 {
-  margin-left: 1.5rem !important;
-}
-dd {
-  margin-bottom: 1rem;
-}
-.border-left {
-  border-left: 1px solid #dee2e6 !important;
 }

@@ -15,7 +15,7 @@
         <div id="header_back">
           <!-- site logo -->
           <div id="site_logo" role="projectlogo" class="col-sm-3">
-            <h1><a href="http://dszv.it/{$CurrentLang}/"><img alt="DSZV-Logo" src="{$WebApplicationBaseURL}images/logos/dszv.gif" /></a></h1>
+            <h1><a href="http://dszv.it/{$CurrentLang}/"><img alt="DSZV-Logo" src="{$WebApplicationBaseURL}images/logos/logo-dszv-jubi-336.jpg" /></a></h1>
           </div>
           <div id="project_info" class="col-sm-9">
             <h2 id="project_title">
@@ -119,9 +119,6 @@
                   <xsl:otherwise><a href="https://www.iubenda.com/privacy-policy/33631120/legal"><xsl:value-of select="i18n:translate('dszv.privacy')" /></a></xsl:otherwise>
                 </xsl:choose>
                 
-              </li>
-              <li>
-                <a href="{$WebApplicationBaseURL}content/below/accessibility.xml"><xsl:value-of select="i18n:translate('dszv.accessibility')" /></a>
               </li>
             </ul>
           </li>
