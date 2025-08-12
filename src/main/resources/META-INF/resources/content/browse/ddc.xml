@@ -2,7 +2,18 @@
 <!DOCTYPE MyCoReWebPage>
 
 <MyCoReWebPage>
-
+  <section xml:lang="de">
+    <head>
+      <meta name="title" content="DDC"/>
+      <meta name="description" content="DDC durchsuchen"/>
+    </head>
+  </section>
+  <section xml:lang="en">
+    <head>
+      <meta name="title" content="DDC"/>
+      <meta name="description" content="Browse DDC"/>
+    </head>
+  </section>
   <section i18n="browse.ddc" xml:lang="all">
 
     <div class="row">
@@ -14,7 +25,7 @@
                                         field="category.top"
                                  countresults="true"
                                    addclassid="true"
-                                  emptyleaves="false"
+                                  emptyleaves="true"
                                         style="bootstrap"
                                    parameters="sort=mods.dateIssued+desc"
                                  addParameter="XSL.template=template_mir"

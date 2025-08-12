@@ -23,11 +23,11 @@
   <parent>
     <groupId>de.gbv.reposis</groupId>
     <artifactId>reposis_parent</artifactId>
-    <version>2018.06-SNAPSHOT</version>
+    <version>2025.06-SNAPSHOT</version>
   </parent>
 
-  <artifactId>de.gbv.dszv</artifactId>
-  <version>2018.06-SNAPSHOT</version>
+  <artifactId>reposis_dszv</artifactId>
+  <version>2025.06-SNAPSHOT</version>
   <properties>
     <MCR.AppName>dszv</MCR.AppName>
   </properties>
