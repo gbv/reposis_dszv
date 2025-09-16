@@ -67,6 +67,17 @@
       <label xml:lang="it">Persone</label>
     </item>
   </menu>
+  <menu id="library">
+  <!-- search menu  -->
+    <label xml:lang="de">Bibliothek</label>
+    <label xml:lang="en">Library</label>
+    <label xml:lang="it">Biblioteca</label>
+    <item href="http://vzlbs2.gbv.de/DB=46/" type="extern">
+      <label xml:lang="de">Online-Katalog</label>
+      <label xml:lang="en">Online Catalog</label>
+      <label xml:lang="it">Catalogo online</label>
+    </item>
+  </menu>
   <menu id="publish" dir="/content/publish">
     <label xml:lang="de">Dokumente einreichen</label>
     <label xml:lang="en">Submit Document</label>

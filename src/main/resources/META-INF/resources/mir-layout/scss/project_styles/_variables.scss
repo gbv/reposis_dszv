@@ -14,43 +14,57 @@
 //  project settings
 // --------------------------------------------------
 
+// post update 25 project colors
+$dszvGreen:   #d6e7e1;
+$dszvRed:     #A94824;
+$dszvGray:    #4D4D4D;
+$dszvSilver:  #b2ac9a;
 
+
+// pre update 25 project colors
+$dszvMint:    #75C2B1;
+$dszvYellow:  #E7C675;
+$dszvOrange:  #FF9900;
+$dszvFire:    #E6432E;
+$dszvSteel:   #625E51;
+$dszvLight:   #f5f5f5;
 
 // --------------------------------------------------
 //  overwrite bootstrap
 // --------------------------------------------------
 
+$primary: $dszvGreen;
+$success: $dszvMint;
+$info: $dszvYellow;
+$warning: $dszvOrange;
+$danger: $dszvFire;
+
+$text-color: $dszvSteel;
+$headings-color: $dszvSteel;
+
+$font-size-base: 1rem;
+
+$link-color: $dszvRed;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$nav-link-color: $dszvRed;
+$nav-link-hover-color: $dszvRed;
+
+$dropdown-link-color: $dszvGray;
+$dropdown-link-hover-color: $dszvRed;
+$dropdown-link-hover-bg: $dszvLight;
+$dropdown-link-active-color: $dszvRed;
+$dropdown-spacer: 1.2rem;
+$dropdown-border-color: $dszvGreen;
+
 /*
-TODO: clean up following cosmol settings
-
-$web-font-path: "https://webfonts.gbv.de/css?family=Source+Sans+Pro:300,400,700";
-
-$gray-darker:        #b6b6b6;
-$brand-primary:      rgb(169, 72, 36);
-$brand-success:      #75C2B1;
-$brand-info:         #E7C675;
-$brand-warning:      rgb(255, 153, 0);
-$brand-danger:       #E6432E;
-
-$font-family-sans-serif:    "Lucida Sans Unicode",sans-serif;
-//$font-size-base:            12px;
-
-//$font-size-h1:      floor(($font-size-base * 2));
-//$font-size-h2:      floor(($font-size-base * 1.7));
-//$font-size-h3:      ceil(($font-size-base * 1.25));
-//$font-size-h4:      $font-size-base;
-//$font-size-h5:      ceil(($font-size-base * 0.85));
-//$font-size-h6:      ceil(($font-size-base * 0.85));
-
-$text-color:        #625E51;
-$headings-color:    #625E51;
-
-// side nav settings need to be set or will throw error
-$side-nav-back:       #ecf0f1 !default;
-$side-nav-border:     #dcddde !default;
-$side-nav-link-color: #42526E !default;
-
-$side-nav-toggle-back: white !default;
-$side-nav-toggle-color-hover: white !default;
-
+  uses standard fonts of operating systems
+  no local font or webfont included
 */
+$font-family-sans-serif: "Lucida Sans Unicode", "Lucida Grande", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$h1-font-size: $font-size-base * 1.75;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.25;

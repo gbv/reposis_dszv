@@ -9,7 +9,6 @@
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
 
   <xsl:template name="mir.navigation">
-
     <div id="header_box" class="clearfix container">
       <div id="options_nav_box" class="mir-prop-nav">
         <nav>
@@ -19,20 +18,39 @@
           </ul>
         </nav>
       </div>
-      <div id="project_logo_box">
-        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
-           class="text-decoration-none">
-          <span id="logo_mir">mir</span>
-          <span id="logo_modul">mycore</span>
-          <span id="logo_slogan">mods institutional repository dszv</span>
+      <div class="project-logo__box">
+        <a
+          href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
+          target="_blank"
+          title="Zur Startseite des Dokumentenserver">
+          <img
+            src="{$WebApplicationBaseURL}/images/logos/logo-dszv-jubi-336.jpg"
+            class="dszv-logo"
+            alt="" />
         </a>
+        <div class="project-logo__slogan">
+          <a
+            href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
+            title="Zur Startseite des Dokumentenserver"
+            class="project-logo__title">
+            Dokumentenserver
+          </a>
+          <a
+            href="http://dszv.it/de/"
+            target="_blank"
+            title="Zum Deutschen Studienzentrum Venedig">
+            <img
+              src="{$WebApplicationBaseURL}/images/logos/title.gif"
+              alt="" />
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="mir-main-nav bg-primary">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 
           <div class="container-fluid">
             <button
@@ -118,50 +136,82 @@
   <xsl:template name="mir.jumbotwo">
     <!-- show only on startpage -->
     <xsl:if test="//div/@class='jumbotwo'">
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Mit MIR wird alles gut!</h1>
-          <h2>your repository - just out of the box</h2>
-        </div>
-      </div>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="mir.footer">
+    <div class="footer-menu">
+      <ul class="nav">
+        <li class="nav-item">
+          <xsl:choose>
+            <xsl:when test="$CurrentLang='it'">
+              <a
+                href="http://www.dszv.it/it/contatti/"
+                class="nav-link">
+                <xsl:value-of select="i18n:translate('dszv.contact')" />
+              </a>
+            </xsl:when>
+            <xsl:otherwise>
+              <a
+                href="http://www.dszv.it/de/kontakt/"
+                class="nav-link">
+                <xsl:value-of select="i18n:translate('dszv.contact')" />
+              </a>
+            </xsl:otherwise>
+          </xsl:choose>
+        </li>
+        <li class="nav-item">
+          <xsl:choose>
+            <xsl:when test="$CurrentLang='it'">
+              <a
+                href="http://www.dszv.it/it/crediti/"
+                class="nav-link">
+                <xsl:value-of select="i18n:translate('dszv.imprint')" />
+              </a>
+            </xsl:when>
+            <xsl:otherwise>
+              <a
+                href="http://www.dszv.it/de/impressum/"
+                class="nav-link">
+                <xsl:value-of select="i18n:translate('dszv.imprint')" />
+              </a>
+            </xsl:otherwise>
+          </xsl:choose>
+        </li>
+        <li class="nav-item">
+          <xsl:choose>
+            <xsl:when test="$CurrentLang='it'">
+              <a
+                href="https://www.iubenda.com/privacy-policy/7992015/legal"
+                class="nav-link">
+                <xsl:value-of select="i18n:translate('dszv.privacy')" />
+              </a>
+            </xsl:when>
+            <xsl:otherwise>
+              <a
+                href="https://www.iubenda.com/privacy-policy/33631120/legal"
+                class="nav-link">
+                <xsl:value-of select="i18n:translate('dszv.privacy')" />
+              </a>
+            </xsl:otherwise>
+          </xsl:choose>
+        </li>
+      </ul>
+
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-4">
-          <h4>Über uns</h4>
-          <p>
-            MIR ein klassicher institutioneller Publikations- bzw.
-            Dokumentenserver. Es basiert auf dem Repository-Framework
-            MyCoRe und dem Metadata Object Description Schema (MODS).
-            <span class="read_more">
-              <a href="http://mycore.de/generated/mir/">Mehr erfahren ...</a>
-            </span>
-          </p>
+        <div class="col dszv-address">
+          Deutsches Studienzentrum in Venedig |
+          Palazzo Barbarigo della Terrazza |
+          S.Polo 2765/a Calle Corner 30125 Venezia
+          <br />
+          Tel. 0039 041 5206355 |
+          Fax. 0039 041 5206780 |
+          <a href="http://www.dszv.it/">www.dszv.it</a>
         </div>
-        <div class="col-2">
-          <h4>Navigation</h4>
-          <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
-          </ul>
-        </div>
-        <div class="col-2">
-          <h4>Netzwerke</h4>
-          <ul class="social_links">
-            <li><a href="#"><button type="button" class="social_icons social_icon_fb"></button>Facebook</a></li>
-            <li><a href="#"><button type="button" class="social_icons social_icon_tw"></button>Twitter</a></li>
-            <li><a href="#"><button type="button" class="social_icons social_icon_gg"></button>Google+</a></li>
-          </ul>
-        </div>
-        <div class="col-2">
-          <h4>Layout based on</h4>
-          <ul class="internal_links">
-            <li><a href="{$WebApplicationBaseURL}mir-layout/template/flatmir.xml">flatmir</a></li>
-            <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-            <li><a href="http://bootswatch.com/">Bootswatch</a></li>
-          </ul>
+        <div class="col-auto dszv-copyright">
+          © DSZV 2025
         </div>
       </div>
     </div>
@@ -171,7 +221,7 @@
     <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
     <div id="powered_by">
       <a href="http://www.mycore.de">
-        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_powered_120x30_blaue_schrift_frei.png" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
   </xsl:template>

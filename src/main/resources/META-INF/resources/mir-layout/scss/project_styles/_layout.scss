@@ -8,6 +8,14 @@
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
+  .dszv_borderbox {
+    background: none;
+    border: 3px dotted $dszvYellow;
+    border-radius: 0px;
+    padding-top: 1rem;
+  }
+
+
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xxl) {
   // add/overwrite styles for responsive level xl and lower
