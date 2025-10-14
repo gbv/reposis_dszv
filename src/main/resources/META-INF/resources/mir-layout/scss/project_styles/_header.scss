@@ -1,0 +1,67 @@
+/*
+ *  header settings
+ */
+
+// set the defaults for all responsive levels here (desktop first)
+// after that, use the media queryies to adujust the lower responsive levels
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
+
+
+  .project-logo {
+    &__box {
+      display: flex;
+      .dszv-logo {
+        width: 200px;
+        margin-right: 1rem;
+      }
+    }
+    &__slogan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 350px;
+        margin-left: .25rem;
+      }
+      .project-logo__title {
+        color: $dszvGray;
+        letter-spacing: .125rem;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: .5rem;
+        &:hover,
+        &:focus {
+          color: $dszvRed;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+
+// X-Large devices (large desktops, less than 1400px)
+@include media-breakpoint-down(xxl) {
+  // add/overwrite styles for responsive level xl and lower
+}
+
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(xl) {
+  // lg and lower
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(lg) {
+  // md and lower
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(md) {
+  // sm and lower
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(sm) {
+  // xs
+}

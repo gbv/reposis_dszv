@@ -1,0 +1,70 @@
+// **************************************************
+//  Variables
+// **************************************************
+
+// --------------------------------------------------
+//  modifies bootstrap/bootswatch settings
+// --------------------------------------------------
+//  You can't use bootstrap variables here,
+//  they are unknown yet.
+//  But if you set them here, you will overwrite
+//  the bootstrap defaults! in this way
+
+// --------------------------------------------------
+//  project settings
+// --------------------------------------------------
+
+// post update 25 project colors
+$dszvGreen:   #d6e7e1;
+$dszvRed:     #A94824;
+$dszvGray:    #4D4D4D;
+$dszvSilver:  #b2ac9a;
+
+
+// pre update 25 project colors
+$dszvMint:    #75C2B1;
+$dszvYellow:  #E7C675;
+$dszvOrange:  #FF9900;
+$dszvFire:    #E6432E;
+$dszvSteel:   #625E51;
+$dszvLight:   #f5f5f5;
+
+// --------------------------------------------------
+//  overwrite bootstrap
+// --------------------------------------------------
+
+$primary: $dszvGreen;
+$success: $dszvMint;
+$info: $dszvYellow;
+$warning: $dszvOrange;
+$danger: $dszvFire;
+
+$text-color: $dszvSteel;
+$headings-color: $dszvSteel;
+
+$font-size-base: 1rem;
+
+$link-color: $dszvRed;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$nav-link-color: $dszvRed;
+$nav-link-hover-color: $dszvRed;
+
+$dropdown-link-color: $dszvGray;
+$dropdown-link-hover-color: $dszvRed;
+$dropdown-link-hover-bg: $dszvLight;
+$dropdown-link-active-color: $dszvRed;
+$dropdown-spacer: 1.2rem;
+$dropdown-border-color: $dszvGreen;
+
+/*
+  uses standard fonts of operating systems
+  no local font or webfont included
+*/
+$font-family-sans-serif: "Lucida Sans Unicode", "Lucida Grande", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$h1-font-size: $font-size-base * 1.75;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.25;

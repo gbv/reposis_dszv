@@ -4,7 +4,7 @@
     <div class="jumbotwo">
       <div class="row">
         <div class="col-md-12" lang="de">
-          <h1>
+          <h1 class="dszv-headline dszv-headline--underline">
             Der Dokumentenserver
           </h1>
         </div>
@@ -41,7 +41,7 @@
         </div>
         <div class="col-md-4 dszv_borderbox" lang="de">
           <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-          <h3 class="text-uppercase">Aktuelle Dokumente</h3>
+          <h3 class="dszv-headline">Aktuelle Dokumente</h3>
           <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
           <div id="last4"></div>
         </div>
@@ -127,5 +127,3 @@
         <log lastEditor="administrator" date="2017-06-20" time="10:35"/>
     </meta>
 </MyCoReWebPage>
-
-
