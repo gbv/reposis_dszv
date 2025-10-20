@@ -5,7 +5,7 @@
   <xed:template id="ddc">
     <xed:bind xpath="mods:classification[@authority='ddc'][@displayLabel='ddc']">
       <div class="form-group row required {$xed-validation-marker}">
-        <label class="col-md-3 col-form-label text-right">
+        <label class="col-md-3 col-form-label text-end form-label">
           <xed:include uri="classification:editor[Text]:0:children:DDC" />
           DDC:
         </label>
@@ -18,5 +18,4 @@
       </div>
     </xed:bind>
   </xed:template>
-
 </xed:template>

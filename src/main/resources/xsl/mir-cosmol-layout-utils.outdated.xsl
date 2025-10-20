@@ -107,7 +107,7 @@
                             <xsl:value-of select="i18n:translate('dszv.library')" /> <span class="caret"></span>
                         </a>
                         <ul aria-labelledby="dszvLibrary" role="menu" class="dropdown-menu">
-                            <li><a href="http://vzlbs2.gbv.de/DB=46/"><xsl:value-of select="i18n:translate('dszv.onlinecatalog')" /></a></li>
+                            <li><a href="https://lbsvz2.gbv.de/DB=46/"><xsl:value-of select="i18n:translate('dszv.onlinecatalog')" /></a></li>
                         </ul>
                     </li>
 
