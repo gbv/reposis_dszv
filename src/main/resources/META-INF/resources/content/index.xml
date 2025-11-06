@@ -39,11 +39,13 @@
             räumen der Bibliothek lediglich ein einfaches Nutzungsrecht ein, so dass eine kommerzielle Veröffentlichung nicht behindert wird.
           </p>
         </div>
-        <div class="col-md-4 dszv_borderbox" lang="de">
-          <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-          <h3 class="dszv-headline">Aktuelle Dokumente</h3>
-          <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
-          <div id="last4"></div>
+        <div class="col-md-4" lang="de">
+          <div class="dszv_borderbox">
+            <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
+            <h3 class="dszv-headline">Aktuelle Dokumente</h3>
+            <p>Im Dokumentenserver befinden sich derzeit <span id="doc_count">[Anz]</span> Datensätze.</p>
+            <div id="last4"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -91,11 +93,13 @@
             ostacolare la pubblicazione commerciale.
           </p>
           </div>
-          <div class="col-md-4 dszv_borderbox" lang="it">
-            <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
-            <h3 class="text-uppercase">Documenti attuali</h3>
-            <p>Nel server di documenti attualmente sono <span id="doc_count">[Anz]</span> record.</p>
-            <div id="last4"></div>
+          <div class="col-md-4" lang="it">
+            <div class="dszv_borderbox">
+              <!-- see also: http://jquery-howto.blogspot.de/2013/09/jquery-cross-domain-ajax-request.html -->
+              <h3 class="text-uppercase">Documenti attuali</h3>
+              <p>Nel server di documenti attualmente sono <span id="doc_count">[Anz]</span> record.</p>
+              <div id="last4"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -111,13 +115,11 @@
               $(data.response.docs).each(function(i, doc){
                 let author = doc['mods.author'] ? doc['mods.author'] : '&#160;';
                 $('#last4').append($('<div class="lastmod"></div>')
-                    .append($('<table class="table"></table>').append($('<tr></tr>')
-                      .append($('<td></td>')
-                        .append('<p class="dszv_date">'+doc['mods.dateIssued']+'</p>',
-                          '<a class="dszv_title" href="../receive/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a>',
-                          '<p class="dszv_author">'+author+'</p>',
-                          '<p class="dszv_modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
-                      )))));
+                  .append('<p class="dszv_date">'+doc['mods.dateIssued']+'</p>',
+                    '<a class="dszv_title" href="../receive/'+doc['returnId']+'">'+doc['search_result_link_text']+'</a>',
+                    '<p class="dszv_author">'+author+'</p>',
+                    '<p class="dszv_modified">'+doc['modifiedby']+', am ' +new Date(doc['modified']).toLocaleString()+'</p>'
+                ));
             });
         });
       </script>

@@ -10,6 +10,23 @@
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
+// home, column for latest documents
+  .dszv_date {
+    color: #999;
+    font-size: 11px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .dszv_modified {
+    font-size: 11px;
+    text-align: right;
+  }
+
+  .dszv-headline {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
 /*
 TODO: clean up old cosmol settings
 
@@ -82,23 +99,6 @@ h1, .h1{
   padding-left: 50px;
   padding-right: 20px;
   display: block;
-}
-
-.dszv_borderbox {
-  background: none;
-  border: 3px dotted #e7c675;
-  border-radius: 0px;
-}
-
-.dszv_date {
-  color: #999;
-  font-size: 11px;
-  margin: 0px 0px 0px 0px;
-}
-
-.dszv_modified {
-  font-size: 11px;
-  text-align: right;
 }
 
 table a:not(.btn), .table a:not(.btn) {
