@@ -9,6 +9,7 @@ on:
       - 'main'
       - '2023.06.x'
       - '2024.06.x'
+      - 'issues/DSZV-15_feedback-and-finetuning'
 
 jobs:
   build:
