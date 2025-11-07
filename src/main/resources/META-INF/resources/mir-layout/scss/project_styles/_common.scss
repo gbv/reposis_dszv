@@ -23,8 +23,15 @@
   }
 
   .dszv-headline {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.125rem;
+  }
+
+  .dszv-series {
+    margin-bottom:2rem;
+    .nav-link {
+      padding: 0;
+    }
   }
 
 /*
