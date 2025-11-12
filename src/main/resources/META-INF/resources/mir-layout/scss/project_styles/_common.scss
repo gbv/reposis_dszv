@@ -54,6 +54,12 @@
     }
   }
 
+  // bs link underline variable is not working for nav-link
+  // todo: find out why
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: underline;
+  }
+
 
 /*
 TODO: clean up old cosmol settings
