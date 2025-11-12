@@ -72,7 +72,7 @@
     <label xml:lang="de">Bibliothek</label>
     <label xml:lang="en">Library</label>
     <label xml:lang="it">Biblioteca</label>
-    <item href="http://vzlbs2.gbv.de/DB=46/" type="extern">
+    <item href="https://lbsvz2.gbv.de/DB=46/" type="extern">
       <label xml:lang="de">Online-Katalog</label>
       <label xml:lang="en">Online Catalog</label>
       <label xml:lang="it">Catalogo online</label>
