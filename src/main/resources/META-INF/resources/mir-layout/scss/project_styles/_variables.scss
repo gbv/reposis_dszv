@@ -17,6 +17,7 @@
 // post update 25 project colors
 $dszvGreen:   #d6e7e1;
 $dszvRed:     #A94824;
+$dszvRedDark: #6a2d17;
 $dszvGray:    #4D4D4D;
 $dszvSilver:  #b2ac9a;
 $grayDefault: #9d9c9c;
@@ -33,7 +34,7 @@ $dszvLight:   #f5f5f5;
 //  overwrite bootstrap
 // --------------------------------------------------
 
-$primary: $dszvGreen;
+$primary: $dszvRed;
 $secondary: $grayDefault;
 $success: $dszvMint;
 $info: $dszvYellow;
@@ -46,14 +47,15 @@ $headings-color: $dszvSteel;
 $font-size-base: 1rem;
 
 $link-color: $dszvRed;
+$link-hover-color: $dszvRedDark;
 $link-decoration: none;
 $link-hover-decoration: underline;
 
 $nav-link-color: $dszvRed;
-$nav-link-hover-color: $dszvRed;
+$nav-link-hover-color: $dszvRedDark;
 
 $dropdown-link-color: $dszvGray;
-$dropdown-link-hover-color: $dszvRed;
+$dropdown-link-hover-color: $dszvRedDark;
 $dropdown-link-hover-bg: $dszvLight;
 $dropdown-link-active-color: $dszvRed;
 $dropdown-spacer: 1.2rem;
@@ -69,3 +71,37 @@ $h1-font-size: $font-size-base * 1.75;
 $h2-font-size: $font-size-base * 1.5;
 $h3-font-size: $font-size-base * 1.25;
 $h4-font-size: $font-size-base * 1.25;
+
+
+// Pagination
+// overwrite bootswatch width bs default
+/*
+$pagination-color:                  $white !default;
+$pagination-bg:                     $success !default;
+$pagination-border-width:           0 !default;
+$pagination-border-color:           transparent !default;
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               darken($success, 15%) !default;
+$pagination-hover-border-color:     transparent !default;
+$pagination-active-bg:              $pagination-hover-bg !default;
+$pagination-active-border-color:    transparent !default;
+$pagination-disabled-color:         $gray-200 !default;
+$pagination-disabled-bg:            lighten($success, 15%) !default;
+$pagination-disabled-border-color:  transparent !default;
+*/
+
+$prefix: "bs-";
+$component-active-bg:$primary;
+
+$pagination-color:                  var(--#{$prefix}link-color);
+$pagination-bg:                     var(--#{$prefix}body-bg);
+$pagination-border-width:           var(--#{$prefix}border-width);
+$pagination-border-color:           var(--#{$prefix}border-color);
+$pagination-hover-color:            var(--#{$prefix}link-hover-color);
+$pagination-hover-bg:               var(--#{$prefix}tertiary-bg);
+$pagination-hover-border-color:     var(--#{$prefix}border-color);
+$pagination-active-bg:              $component-active-bg;
+$pagination-active-border-color:    $component-active-bg;
+$pagination-disabled-color:         var(--#{$prefix}secondary-color);
+$pagination-disabled-bg:            var(--#{$prefix}secondary-bg);
+$pagination-disabled-border-color:  var(--#{$prefix}border-color);

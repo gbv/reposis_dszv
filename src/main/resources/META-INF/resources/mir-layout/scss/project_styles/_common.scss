@@ -34,6 +34,27 @@
     }
   }
 
+  // all the elements that should have no underline by default
+  .hit_title,
+  .hit_author,
+  .hit_source,
+  .single_hit_option,
+  .names,
+  .internal_links,
+  .social_links {
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // todo: remove when cleaned up in bs
+  .pagination {
+    a {
+      color: var(--bs-pagination-color);
+    }
+  }
+
+
 /*
 TODO: clean up old cosmol settings
 
