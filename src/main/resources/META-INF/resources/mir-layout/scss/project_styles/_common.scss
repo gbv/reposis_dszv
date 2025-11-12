@@ -10,6 +10,57 @@
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
+// home, column for latest documents
+  .dszv_date {
+    color: #999;
+    font-size: 11px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .dszv_modified {
+    font-size: 11px;
+    text-align: right;
+  }
+
+  .dszv-headline {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .dszv-series {
+    margin-bottom:2rem;
+    .nav-link {
+      padding: 0;
+    }
+  }
+
+  // all the elements that should have no underline by default
+  .hit_title,
+  .hit_author,
+  .hit_source,
+  .single_hit_option,
+  .names,
+  .internal_links,
+  .social_links {
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // todo: remove when cleaned up in bs
+  .pagination {
+    a {
+      color: var(--bs-pagination-color);
+    }
+  }
+
+  // bs link underline variable is not working for nav-link
+  // todo: find out why
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: underline;
+  }
+
+
 /*
 TODO: clean up old cosmol settings
 
@@ -82,23 +133,6 @@ h1, .h1{
   padding-left: 50px;
   padding-right: 20px;
   display: block;
-}
-
-.dszv_borderbox {
-  background: none;
-  border: 3px dotted #e7c675;
-  border-radius: 0px;
-}
-
-.dszv_date {
-  color: #999;
-  font-size: 11px;
-  margin: 0px 0px 0px 0px;
-}
-
-.dszv_modified {
-  font-size: 11px;
-  text-align: right;
 }
 
 table a:not(.btn), .table a:not(.btn) {

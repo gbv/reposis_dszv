@@ -1,5 +1,5 @@
-/*  layout settings
- *  - styles for basic layout elements
+/*  badges settings
+ *  - modify bs badges settings or define new one
  */
 
 // set the defaults for all responsive levels here (desktop first)
@@ -8,14 +8,14 @@
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
-  .dszv_borderbox {
-    background: none;
-    border: 3px dotted $dszvYellow;
-    border-radius: 0px;
-    padding: 1rem;
-    margin-left: 1rem;
+  // todo: until cleaned up in mir
+  a[class*="mir-badge-genre"] {
+    background-color: $dszvYellow;
   }
-
+  a[class*="mir-badge-date"],
+  a[class*="mir-badge-license"] {
+    background-color: $dszvRed;
+  }
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xxl) {
