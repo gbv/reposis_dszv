@@ -9,7 +9,7 @@
       <label xml:lang="x-mapping" text="marcgt:article diniPublType:article" />
       <label xml:lang="en" text="Article / Chapter" />
       <label xml:lang="de" text="Artikel / Aufsatz" />
-      <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
+      <label xml:lang="x-hosts" text="journal collection festschrift proceedings standalone" />
       <category ID="chapter">
         <label xml:lang="en" text="Book chapter" />
         <label xml:lang="de" text="Buchkapitel" />
@@ -43,15 +43,15 @@
         <label xml:lang="it" text="Recensione" />
         <label xml:lang="de" text="Rezension" />
         <label xml:lang="en" text="Review" />
-        <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
+        <label xml:lang="x-hosts" text="journal collection festschrift proceedings standalone" />
       </category>
     </category>
     <category ID="thesis">
       <label xml:lang="en" text="Thesis" />
       <label xml:lang="de" text="Hochschulschriften" />
       <label xml:lang="x-group" text="true" />
-      <label xml:lang="x-hosts" text="series standalone" />
       <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:workingPaper XMetaDissPlusThesisLevel:other" />
+      <label xml:lang="x-hosts" text="series standalone" />
       <label xml:lang="it" text="Tesi universitaria" />
       <category ID="exam">
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:Staatsexamen" />
@@ -69,16 +69,16 @@
       </category>
       <category ID="habilitation">
         <label xml:lang="de" text="Habilitation" />
-        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:doctoralThesis XMetaDissPlusThesisLevel:thesis.habilitation" />
         <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:doctoralThesis XMetaDissPlusThesisLevel:thesis.habilitation" />
         <label xml:lang="it" text="Tesi di abilitazione alla libera docenza" />
         <label xml:lang="en" text="Habilitation" />
       </category>
       <category ID="diploma_thesis">
         <label xml:lang="it" text="Tesi di diploma" />
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:Diplom" />
+        <label xml:lang="x-hosts" text="series standalone" />
         <label xml:lang="en" text="Diploma thesis" />
-        <label xml:lang="x-hosts" text="series standalone diniPublType:masterThesis" />
         <label xml:lang="de" text="Diplomarbeit" />
       </category>
       <category ID="master_thesis">
@@ -89,8 +89,8 @@
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:master" />
       </category>
       <category ID="bachelor_thesis">
-        <label xml:lang="it" text="Tesi di laurea triennale" />
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:bachelorThesis XMetaDissPlusThesisLevel:bachelor" />
+        <label xml:lang="it" text="Tesi di laurea triennale" />
         <label xml:lang="de" text="Abschlussarbeit (Bachelor)" />
         <label xml:lang="en" text="Bachelor thesis" />
         <label xml:lang="x-hosts" text="series standalone" />
@@ -106,8 +106,8 @@
         <label xml:lang="en" text="Magister thesis" />
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:M.A." />
         <label xml:lang="de" text="Magisterarbeit" />
-        <label xml:lang="it" text="Magisterarbeit" />
         <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="it" text="Magisterarbeit" />
       </category>
     </category>
     <category ID="collection">
@@ -195,8 +195,8 @@
       <label xml:lang="it" text="Collana" />
     </category>
     <category ID="interview">
+      <label xml:lang="x-hosts" text="journal standalone" />
       <label xml:lang="it" text="Intervista" />
-      <label xml:lang="x-hosts" text="journal newspaper standalone" />
       <label xml:lang="x-mapping" text="marcgt:interview diniPublType:report" />
       <label xml:lang="en" text="Interview" />
       <label xml:lang="de" text="Interview" />
@@ -230,15 +230,15 @@
       <label xml:lang="it" text="Registrazione audio" />
     </category>
     <category ID="video">
-      <label xml:lang="x-hosts" text="standalone lecture" />
+      <label xml:lang="x-hosts" text="standalone" />
       <label xml:lang="it" text="Film / Video" />
       <label xml:lang="de" text="Film / Video" />
       <label xml:lang="en" text="Movie / Video" />
       <label xml:lang="x-mapping" text="marcgt:motion_picture diniPublType:MovingImage" />
     </category>
     <category ID="picture">
+      <label xml:lang="x-hosts" text="standalone" />
       <label xml:lang="it" text="Immagine" />
-      <label xml:lang="x-hosts" text="standalone lecture" />
       <label xml:lang="x-mapping" text="marcgt:picture diniPublType:StillImage" />
       <label xml:lang="de" text="Bild" />
       <label xml:lang="en" text="Picture" />
