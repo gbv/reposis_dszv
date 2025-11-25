@@ -1,34 +1,17 @@
-
 # DSZV
 
 ## Installation Instructions
 
 * run `mvn clean install`
 * copy jar to ~/.mycore/(dev-)mir/lib/
+* configure mycore.properties if necessary
 
-* TODO: When migrating to higher mycore version add workflows back
+## Development
 
-## Migration
-
-# 2018 -> 2025
-
-Kommandos
+You can add these to your ~/.mycore/(dev-)mir/.mycore.properties
 ```
-create all objectinfo
-update classification from uri resource:mycore-classifications/nameIdentifier.xml
-update classification from uri resource:mycore-classifications/diniPublType2022.xml
-update classification from uri resource:mycore-classifications/author_roles.xml
-update classification from uri resource:mycore-classifications/derivate_types.xml
-update classification from uri resource:classifications/DDC.xml
-update classification from uri resource:classifications/marcrelator.xml
-update classification from uri resource:classifications/mir_genres.xml
-update classification from uri resource:classifications/mir_licenses.xml
-update classification from uri resource:classifications/noteTypes.xml
-update classification from uri resource:classifications/rfc5646.xml
-update classification from uri resource:classifications/state.xml
-migrate all derivates
-harmonize derivates for all objects
-repair metadata search of type mods
+MCR.Developer.Resource.Override=/path/to/reposis_dszv/src/main/resources
+MCR.LayoutService.LastModifiedCheckPeriod=0
+MCR.UseXSLTemplateCache=false
+MCR.SASS.DeveloperMode=true
 ```
-
-Poolprivileg anlegen: create-derivate für submitter
