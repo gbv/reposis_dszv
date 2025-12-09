@@ -20,9 +20,9 @@
       </div>
       <div class="project-logo__box">
         <a
-          href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
+          href="http://dszv.it/de/"
           target="_blank"
-          title="Zur Startseite des Dokumentenserver">
+          title="Zum Deutschen Studienzentrum Venedig">
           <img
             src="{$WebApplicationBaseURL}/images/logos/logo-dszv-jubi-336.jpg"
             class="dszv-logo"
