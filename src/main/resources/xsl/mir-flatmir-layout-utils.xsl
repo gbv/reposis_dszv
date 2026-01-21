@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-    xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
-    xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-    exclude-result-prefixes="i18n mcrver mcrxsl">
+<xsl:stylesheet
+  version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:date="http://exslt.org/dates-and-times"
+  exclude-result-prefixes="date">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
 
@@ -51,7 +50,6 @@
     <div class="mir-main-nav">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -63,71 +61,65 @@
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
             <div
               id="mir-main-nav-collapse-box"
               class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
-
               <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <xsl:for-each select="$loaded_navigation_xml/menu">
                   <xsl:choose>
                     <!-- Ignore some menus, they are shown elsewhere in the layout -->
-                    <xsl:when test="@id='main'"/>
-                    <xsl:when test="@id='brand'"/>
-                    <xsl:when test="@id='below'"/>
-                    <xsl:when test="@id='user'"/>
+                    <xsl:when test="@id='main'" />
+                    <xsl:when test="@id='brand'" />
+                    <xsl:when test="@id='below'" />
+                    <xsl:when test="@id='user'" />
                     <xsl:otherwise>
-                      <xsl:apply-templates select="."/>
+                      <xsl:apply-templates select="." />
                     </xsl:otherwise>
                   </xsl:choose>
                 </xsl:for-each>
                 <xsl:call-template name="mir.basketMenu" />
               </ul>
-
-            <form
-              action="{$WebApplicationBaseURL}servlets/solr/find"
-              class="searchfield_box d-flex"
-              role="search">
-              <!-- Check if 'initialCondQuery' exists and extract its value if it does -->
-              <xsl:variable name="initialCondQuery" select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='initialCondQuery']" />
-
-              <input
-                name="condQuery"
-                placeholder="{i18n:translate('mir.navsearch.placeholder')}"
-                class="form-control me-sm-2 search-query"
-                id="searchInput"
-                type="text"
-                aria-label="Search" />
-
-              <input type="hidden" id="initialCondQueryMirFlatmirLayout" name="initialCondQuery">
-                <xsl:attribute name="value">
-                  <xsl:choose>
-                    <xsl:when test="$initialCondQuery">
-                      <xsl:value-of select="$initialCondQuery"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <xsl:value-of select="'*'"/>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </xsl:attribute>
-              </input>
-
-              <xsl:choose>
-                <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
-                  <input name="owner" type="hidden" value="createdby:*" />
-                </xsl:when>
-                <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
-                  <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
-                </xsl:when>
-              </xsl:choose>
-
-              <button type="submit" class="btn btn-primary my-2 my-sm-0">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+              <form
+                action="{$WebApplicationBaseURL}servlets/solr/find"
+                class="searchfield_box d-flex"
+                role="search">
+                <!-- Check if 'initialCondQuery' exists and extract its value if it does -->
+                <xsl:variable
+                  name="initialCondQuery"
+                  select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='initialCondQuery']" />
+                <input
+                  name="condQuery"
+                  placeholder="{document('i18n:mir.navsearch.placeholder')/i18n/text()}"
+                  class="form-control me-sm-2 search-query"
+                  id="searchInput"
+                  type="text"
+                  aria-label="Search" />
+                <input type="hidden" id="initialCondQueryMirFlatmirLayout" name="initialCondQuery">
+                  <xsl:attribute name="value">
+                    <xsl:choose>
+                      <xsl:when test="$initialCondQuery">
+                        <xsl:value-of select="$initialCondQuery" />
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:value-of select="'*'" />
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:attribute>
+                </input>
+                <xsl:choose>
+                  <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
+                    <input name="owner" type="hidden" value="createdby:*" />
+                  </xsl:when>
+                  <xsl:when test="not($CurrentUser='guest')">
+                    <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+                  </xsl:when>
+                </xsl:choose>
+                <button type="submit" class="btn btn-primary my-2 my-sm-0">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
             </div>
           </div>
-
         </nav>
       </div>
     </div>
@@ -148,14 +140,14 @@
               <a
                 href="http://www.dszv.it/it/contatti/"
                 class="nav-link">
-                <xsl:value-of select="i18n:translate('dszv.contact')" />
+                <xsl:value-of select="document('i18n:dszv.contact')/i18n/text()" />
               </a>
             </xsl:when>
             <xsl:otherwise>
               <a
                 href="http://www.dszv.it/de/kontakt/"
                 class="nav-link">
-                <xsl:value-of select="i18n:translate('dszv.contact')" />
+                <xsl:value-of select="document('i18n:dszv.contact')/i18n/text()" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
@@ -166,14 +158,14 @@
               <a
                 href="http://www.dszv.it/it/crediti/"
                 class="nav-link">
-                <xsl:value-of select="i18n:translate('dszv.imprint')" />
+                <xsl:value-of select="document('i18n:dszv.imprint')/i18n/text()" />
               </a>
             </xsl:when>
             <xsl:otherwise>
               <a
                 href="http://www.dszv.it/de/impressum/"
                 class="nav-link">
-                <xsl:value-of select="i18n:translate('dszv.imprint')" />
+                <xsl:value-of select="document('i18n:dszv.imprint')/i18n/text()" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
@@ -184,20 +176,19 @@
               <a
                 href="https://www.iubenda.com/privacy-policy/7992015/legal"
                 class="nav-link">
-                <xsl:value-of select="i18n:translate('dszv.privacy')" />
+                <xsl:value-of select="document('i18n:dszv.privacy')/i18n/text()" />
               </a>
             </xsl:when>
             <xsl:otherwise>
               <a
                 href="https://www.iubenda.com/privacy-policy/33631120/legal"
                 class="nav-link">
-                <xsl:value-of select="i18n:translate('dszv.privacy')" />
+                <xsl:value-of select="document('i18n:dszv.privacy')/i18n/text()" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
         </li>
       </ul>
-
     </div>
     <div class="container">
       <div class="row">
@@ -211,17 +202,21 @@
           <a href="http://www.dszv.it/">www.dszv.it</a>
         </div>
         <div class="col-auto dszv-copyright">
-          © DSZV 2025
+          © DSZV
+          <xsl:value-of select="date:year(date:date())" />
         </div>
       </div>
     </div>
   </xsl:template>
 
   <xsl:template name="mir.powered_by">
-    <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+    <xsl:variable name="mcr_version" select="document('version:full')/version/text()" />
     <div id="powered_by">
       <a href="http://www.mycore.de">
-        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_powered_120x30_blaue_schrift_frei.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+        <img
+          src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_powered_120x30_blaue_schrift_frei.png"
+          title="{$mcr_version}"
+          alt="powered by MyCoRe" />
       </a>
     </div>
   </xsl:template>
