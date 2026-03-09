@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet
-  version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet version="1.0"
   xmlns:date="http://exslt.org/dates-and-times"
-  exclude-result-prefixes="date">
+  xmlns:mcracl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+  xmlns:mcri18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:mcrversion="xalan://org.mycore.common.MCRCoreVersion"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="date mcracl mcri18n mcrversion">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
 
@@ -18,14 +20,8 @@
         </nav>
       </div>
       <div class="project-logo__box">
-        <a
-          href="http://dszv.it/de/"
-          target="_blank"
-          title="Zum Deutschen Studienzentrum Venedig">
-          <img
-            src="{$WebApplicationBaseURL}/images/logos/logo-dszv-jubi-336.jpg"
-            class="dszv-logo"
-            alt="" />
+        <a href="https://dszv.it/de/" target="_blank" title="Zum Deutschen Studienzentrum Venedig">
+          <img src="{$WebApplicationBaseURL}/images/logos/logo-dszv-jubi-336.jpg" class="dszv-logo" alt="" />
         </a>
         <div class="project-logo__slogan">
           <a
@@ -34,18 +30,12 @@
             class="project-logo__title">
             Dokumentenserver
           </a>
-          <a
-            href="http://dszv.it/de/"
-            target="_blank"
-            title="Zum Deutschen Studienzentrum Venedig">
-            <img
-              src="{$WebApplicationBaseURL}/images/logos/title.gif"
-              alt="" />
+          <a href="https://dszv.it/de/" target="_blank" title="Zum Deutschen Studienzentrum Venedig">
+            <img src="{$WebApplicationBaseURL}/images/logos/title.gif" alt="" />
           </a>
         </div>
       </div>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="mir-main-nav">
       <div class="container">
@@ -79,17 +69,14 @@
                 </xsl:for-each>
                 <xsl:call-template name="mir.basketMenu" />
               </ul>
-              <form
-                action="{$WebApplicationBaseURL}servlets/solr/find"
-                class="searchfield_box d-flex"
-                role="search">
+              <form action="{$WebApplicationBaseURL}servlets/solr/find" class="searchfield_box d-flex" role="search">
                 <!-- Check if 'initialCondQuery' exists and extract its value if it does -->
-                <xsl:variable
-                  name="initialCondQuery"
-                  select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='initialCondQuery']" />
+                <xsl:variable name="initialCondQuery" select="
+                  /response/lst[@name='responseHeader']/lst[@name='params']/str[@name='initialCondQuery']
+                " />
                 <input
                   name="condQuery"
-                  placeholder="{document('i18n:mir.navsearch.placeholder')/i18n/text()}"
+                  placeholder="{mcri18n:translate('mir.navsearch.placeholder')}"
                   class="form-control me-sm-2 search-query"
                   id="searchInput"
                   type="text"
@@ -110,7 +97,7 @@
                   <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
                     <input name="owner" type="hidden" value="createdby:*" />
                   </xsl:when>
-                  <xsl:when test="not($CurrentUser='guest')">
+                  <xsl:when test="not(mcracl:isCurrentUserGuestUser())">
                     <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
                   </xsl:when>
                 </xsl:choose>
@@ -128,6 +115,7 @@
   <xsl:template name="mir.jumbotwo">
     <!-- show only on startpage -->
     <xsl:if test="//div/@class='jumbotwo'">
+      <!-- ignore -->
     </xsl:if>
   </xsl:template>
 
@@ -137,17 +125,13 @@
         <li class="nav-item">
           <xsl:choose>
             <xsl:when test="$CurrentLang='it'">
-              <a
-                href="http://www.dszv.it/it/contatti/"
-                class="nav-link">
-                <xsl:value-of select="document('i18n:dszv.contact')/i18n/text()" />
+              <a href="https://www.dszv.it/it/contatti/" class="nav-link">
+                <xsl:value-of select="mcri18n:translate('dszv.contact')" />
               </a>
             </xsl:when>
             <xsl:otherwise>
-              <a
-                href="http://www.dszv.it/de/kontakt/"
-                class="nav-link">
-                <xsl:value-of select="document('i18n:dszv.contact')/i18n/text()" />
+              <a href="https://www.dszv.it/de/kontakt/" class="nav-link">
+                <xsl:value-of select="mcri18n:translate('dszv.contact')" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
@@ -155,17 +139,13 @@
         <li class="nav-item">
           <xsl:choose>
             <xsl:when test="$CurrentLang='it'">
-              <a
-                href="http://www.dszv.it/it/crediti/"
-                class="nav-link">
-                <xsl:value-of select="document('i18n:dszv.imprint')/i18n/text()" />
+              <a href="https://www.dszv.it/it/crediti/" class="nav-link">
+                <xsl:value-of select="mcri18n:translate('dszv.imprint')" />
               </a>
             </xsl:when>
             <xsl:otherwise>
-              <a
-                href="http://www.dszv.it/de/impressum/"
-                class="nav-link">
-                <xsl:value-of select="document('i18n:dszv.imprint')/i18n/text()" />
+              <a href="https://www.dszv.it/de/impressum/" class="nav-link">
+                <xsl:value-of select="mcri18n:translate('dszv.imprint')" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
@@ -173,17 +153,13 @@
         <li class="nav-item">
           <xsl:choose>
             <xsl:when test="$CurrentLang='it'">
-              <a
-                href="https://www.iubenda.com/privacy-policy/7992015/legal"
-                class="nav-link">
-                <xsl:value-of select="document('i18n:dszv.privacy')/i18n/text()" />
+              <a href="https://www.iubenda.com/privacy-policy/7992015/legal" class="nav-link">
+                <xsl:value-of select="mcri18n:translate('dszv.privacy')" />
               </a>
             </xsl:when>
             <xsl:otherwise>
-              <a
-                href="https://www.iubenda.com/privacy-policy/33631120/legal"
-                class="nav-link">
-                <xsl:value-of select="document('i18n:dszv.privacy')/i18n/text()" />
+              <a href="https://www.iubenda.com/privacy-policy/33631120/legal" class="nav-link">
+                <xsl:value-of select="mcri18n:translate('dszv.privacy')" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
@@ -193,13 +169,11 @@
     <div class="container">
       <div class="row">
         <div class="col dszv-address">
-          Deutsches Studienzentrum in Venedig |
-          Palazzo Barbarigo della Terrazza |
-          S.Polo 2765/a Calle Corner 30125 Venezia
+          Deutsches Studienzentrum in Venedig | Palazzo Barbarigo della Terrazza | S.Polo 2765/a Calle Corner 30125
+          Venezia
           <br />
-          Tel. 0039 041 5206355 |
-          Fax. 0039 041 5206780 |
-          <a href="http://www.dszv.it/">www.dszv.it</a>
+          Tel. 0039 041 5206355 | Fax. 0039 041 5206780 |
+          <a href="https://www.dszv.it/">www.dszv.it</a>
         </div>
         <div class="col-auto dszv-copyright">
           © DSZV
@@ -210,12 +184,12 @@
   </xsl:template>
 
   <xsl:template name="mir.powered_by">
-    <xsl:variable name="mcr_version" select="document('version:full')/version/text()" />
+    <xsl:variable name="version" select="concat('MyCoRe ', mcrversion:getCompleteVersion())" />
     <div id="powered_by">
-      <a href="http://www.mycore.de">
+      <a href="https://www.mycore.de">
         <img
           src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_powered_120x30_blaue_schrift_frei.png"
-          title="{$mcr_version}"
+          title="{$version}"
           alt="powered by MyCoRe" />
       </a>
     </div>
